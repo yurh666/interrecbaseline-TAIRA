@@ -1,8 +1,8 @@
 # TAIRA Baseline 完整复现报告
 
-> 生成时间：2026-05-09  
+> 生成时间：2026-05-09（本节进度已更新）  
 > 数据集：LastFM（hetrec2011-lastfm-2k，与 InterRec 同一份数据）  
-> 实验状态：🔄 **Running** — seed=0 正在运行（已完成 4/500 queries，预计 ~4.5h）
+> 实验状态：**LastFM seed=0、seed=1 已跑满 500 queries 并落盘；seed=2 已在原机器主动中止**，改由另一台服务器按 `docs/VIBE_CODING_PROMPT.md` 仅跑 seed=2，再与其它三域结果一并汇总。
 
 ---
 
@@ -17,7 +17,7 @@ TAIRA 原论文使用的是 Amazon 数据集（clothing / beauty / music），�
 | 实验 | 数据集 | 状态 |
 |------|--------|------|
 | TAIRA (amazon_music) | Amazon Music Digital Downloads | ✅ 已完成（仅作参考，不入主表）|
-| **TAIRA (lastfm)** | LastFM hetrec2011-2k（与 InterRec 同份）| 🔄 **进行中**（主表用）|
+| **TAIRA (lastfm)** | LastFM hetrec2011-2k（与 InterRec 同份）| ✅ seed0/1 完成；seed=2 **待远端机**（主表最终需 **3 seeds 均值 ± std**）|
 | MCMIPL | LastFM-Star（MCMIPL 官方格式）| ✅ 已完成 |
 | InterRec | LastFM hetrec2011-2k | 🔄 进行中 |
 
@@ -180,24 +180,33 @@ TAIRA query_data1.csv:
 
 ### 5.1 当前进度（实时更新）
 
-| Seed | 状态 | 完成 queries | 预计完成时间 |
-|------|------|------------|------------|
-| seed=0 | 🔄 进行中 | 4/500 | ~14:30 |
-| seed=1 | ⏳ 等待 | 0/500 | ~19:00 |
-| seed=2 | ⏳ 等待 | 0/500 | ~24:00 |
+| Seed | 状态 | 完成 queries | 结果 CSV（日志目录） |
+|------|------|--------------|---------------------|
+| seed=0 | ✅ 已完成 | **500/500** | `TAIRA/data/lastfm/logs/TAIRA-2026-05-09 10_37_52/result-TAIRA-2026-05-09 10_37_52.csv` |
+| seed=1 | ✅ 已完成 | **500/500** | `TAIRA/data/lastfm/logs/TAIRA-2026-05-09 15_01_09/result-TAIRA-2026-05-09 15_01_09.csv` |
+| seed=2 | ⏭️ **不在本机续跑** | — | 原 `screen`/串行脚本在 seed1 结束后已自动启跑；已在 **仅存约十余条样本时终止进程**，半成品目录 **`TAIRA-2026-05-09 19_26_13` 已删除**，避免与远端正式 seed=2 混淆。远端请执行：`bash scripts/run_lastfm_seeds.sh 2`。 |
 
-### 5.2 早期结果（seed=0，前 4 条）
+### 5.2 LastFM：seed=0 / seed=1 全量聚合（每 seed 500 条，`fail` 非空）
 
-| Query | Target | HR@10 | MRR | NDCG | Fail |
-|-------|--------|-------|-----|------|------|
-| Babyshambles (indie punk) | 208 | 0.900 | 1.00 | 0.960 | 0 |
-| The Stone Roses (90s pop) | 2606 | 0.150 | 1.00 | 0.356 | 0 |
-| David Cook (american idol rock) | 297 | 0.300 | 1.00 | 0.600 | 0 |
-| Rihanna (pop rnb) | 288 | 0.800 | 1.00 | 0.920 | 0 |
+| Seed | SR（`fail==0` 比例）| HR@10 | MRR@10 | NDCG@10 |
+|------|---------------------|-------|--------|---------|
+| 0 | **0.940** | **0.506** | **0.949** | **0.747** |
+| 1 | **0.970** | **0.721** | **0.970** | **0.898** |
 
-**早期观察**：前 4 条全部成功（SR=1.0），HR@10 均值 = 0.538，MRR = 1.0（均命中 top-1！）。
+### 5.3 暂定汇总（仅供进展参考，≠ 论文主表终值）
 
-### 5.3 Amazon Music 参考结果（3 seeds，已完成，不入主表）
+在 **seed=2 未出炉前**，仅以 seed=0、1 两点算样本标准差：
+
+| 指标 | 均值 ± std（seed 0–1，`n=2`）|
+|------|------------------------------|
+| SR | **0.955 ± 0.021** |
+| HR@10 | **0.613 ± 0.152** |
+| MRR@10 | **0.959 ± 0.015** |
+| NDCG@10 | **0.822 ± 0.107** |
+
+**说明**：seed=1 的 HR / NDCG 高于 seed=0 属正常随机波动范围；最终主表请以 **三路 seed 均值 ± std** 为准。
+
+### 5.4 Amazon Music 参考结果（3 seeds，已完成，不入主表）
 
 | 指标 | seed=0 | seed=1 | seed=2 | **均值 ± 标准差** |
 |------|--------|--------|--------|-----------------|
@@ -218,11 +227,10 @@ TAIRA query_data1.csv:
 数据集: LastFM (hetrec2011-2k, n_users=1648, n_items=2665)
 评估协议: future_test 为目标 items，top-K 推荐是否命中
 
-方法              | HR@10 | NDCG@10 | MRR@10 | SR (=HR>0) | 对话轮次
+方法              | HR@10 | NDCG@10 | MRR@10 | SR（fail）| 对话轮次
 ─────────────────────────────────────────────────────────────────────
 BM25 Baseline     | 0.320 | 0.081   | 0.133  | ~0.xx      | N/A (1-turn)
-TAIRA†            | TBD   | TBD     | TBD    | TBD        | 1 (fixed)
-  (lastfm, 3seed) |       |         |        |            |
+TAIRA† (lastfm, 3seed) | 见 §5.3（seed0+1 暂估；待 seed=2）| （同上） | （同上） | （同上） | 1（固定）
 InterRec（ours）  | TBD   | TBD     | TBD    | TBD        | avg 1-15
   (lastfm, 3seed) |       |         |        |            |
 ```

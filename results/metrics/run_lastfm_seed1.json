@@ -1,0 +1,15 @@
+{
+  "seed": 1,
+  "n_queries": 500,
+  "n_success": 485,
+  "SR": 0.97,
+  "HR@10": 0.7206,
+  "MRR@10": 0.97,
+  "NDCG@10": 0.8981,
+  "HR@10_succ": 0.7429,
+  "NDCG@10_succ": 0.9258,
+  "fail_rate": 0.03,
+  "direct_HR@10": 0.086,
+  "direct_MRR@10": 0.0214,
+  "direct_NDCG@10": 0.0361
+}
