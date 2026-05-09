@@ -91,7 +91,7 @@ bash scripts/run_taira_interrec_dataset.sh amazon_book
 
 ## 7）交付与上传
 
-- 汇总 **LastFM seed2** 与 **yelp / movielens / amazon_book** 各 3 seed：HR@10、NDCG、MRR、SR（与仓库字段一致）；报告 **均值 ± 标准差**。
+- 汇总 **LastFM seed2** 与 **yelp / movielens / amazon_book** 各 3 seed。指标 **一律只增不减**：除原来的 **`SR`、`HR@10`、`MRR@10`、`NDCG@10`、`fail_rate`、`HR@10_succ`、`direct_*`** 外，解析脚本还会在 JSON 里附带 **`main_table_interrec_paradigm`**（主表 SR@\* / AvgT / hDCG 映射）与 **`protocol_interrec_item_id`**（与 method1 最接近的 ID 命中）。交付说明里建议 **三组都报**，不要只报其中一组。
 - 在仓库根目录：
 
 ```bash

@@ -58,6 +58,8 @@ def collect():
             "direct_HR@10": m.get("direct_HR@10", ""),
             "direct_MRR@10": m.get("direct_MRR@10", ""),
             "direct_NDCG@10": m.get("direct_NDCG@10", ""),
+            "main_SR@5": mt.get("SR@5", ""),
+            "main_SR@10": mt.get("SR@10", ""),
             "main_SR@15": mt.get("SR@15", ""),
             "main_AvgT": mt.get("AvgT", ""),
             "main_hDCG": mt.get("hDCG", ""),
@@ -87,7 +89,9 @@ def collect():
         print(f"\nDomain: {domain} (n_seeds={len(domain_rows)})")
         for metric in [
             "SR", "HR@10", "MRR@10", "NDCG@10", "fail_rate",
-            "direct_HR@10", "main_SR@15", "main_hDCG", "interrec_id_HR@10",
+            "direct_HR@10",
+            "main_SR@5", "main_SR@10", "main_SR@15",
+            "main_hDCG", "interrec_id_HR@10",
         ]:
             vals = [float(r[metric]) for r in domain_rows if r[metric] != ""]
             if vals:
