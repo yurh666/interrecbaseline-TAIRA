@@ -13,8 +13,11 @@ set -euo pipefail
 set -o pipefail
 
 DATASET="${1:?usage: $0 <lastfm|yelp|movielens|amazon_book>}"
-SCRIPTS_DIR="/root/main_table_experiments/baselines/taira_official/scripts"
-LOG_BASE="/root/main_table_experiments/baselines/taira_official/results"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+TAIRA_DIR="$REPO_ROOT/TAIRA"
+SCRIPTS_DIR="$SCRIPT_DIR"
+LOG_BASE="$REPO_ROOT/results"
 mkdir -p "$LOG_BASE/metrics"
 
 CFG="$TAIRA_DIR/system_config.yaml"
