@@ -101,6 +101,25 @@ git commit -m "Add LastFM seed2 and yelp/movielens/amazon_book runs"
 git push origin main
 ```
 
+## 指标：读 `results/` 与对照 method1（InterRec）
+
+每条 `result-*.csv` 跑完后必须执行：
+
+```bash
+cd "$(git rev-parse --show-toplevel)"
+<你的conda python> scripts/parse_taira_metrics.py \
+  "TAIRA/data/<dataset>/logs/<某次TAIRA目录>/result-*.csv" \
+  "results/metrics/run_<dataset>_seed<SEED>.json" <SEED>
+```
+
+生成的 **`run_*_seed*.json`** 中包含：
+
+1. **原生**：`SR`、`HR@10`、`MRR@10`、`NDCG@10`、`fail_rate`（LLM / 任务失败语义，见 `docs/taira_reproduction_report.md` §3.4）。
+2. **`main_table_interrec_paradigm`**：与主表「多轮」列对齐用的 **SR@5/10/15（均等于 LLM 的 HR@10）、AvgT=1、hDCG=NDCG@10**；供和 MCMIPL 同列排版，**脚注说明单轮映射**。
+3. **`protocol_interrec_item_id`**（若 CSV 有 `direct_*`）：**物品 ID 是否与 `future_test` 在 top-10 相交** —— **与 InterRec（method1）硬协议最接近**，写论文时 **TAIRA vs ours 应用这一路作核心对照**。
+
+汇总多 seed 时：`python scripts/collect_taira_results.py` 会刷新上级 `comparison/results/taira_results.csv`（若存在 `comparison/` 目录）；并打印各指标 mean±std。**交付报告里请同时贴：原生 + 主表映射 + ID 协议三路摘要。**
+
 ---
 
 ## 附录：将来在本机只想跑到 seed 1

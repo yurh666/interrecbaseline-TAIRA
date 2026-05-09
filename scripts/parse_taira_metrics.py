@@ -7,6 +7,12 @@ TAIRA outputs: hit_rate (Recall@10), mrr (MRR@10, buggy=1.0 on hit),
                ndcgs (NDCG@10), fail (0/1)
 These are mapped to: HR@10, MRR@10, NDCG@10, SR (success rate)
 
+Also emits:
+  - main_table_interrec_paradigm: SR@5/10/15 = HR@10 (single-turn), AvgT=1,
+    hDCG = NDCG@10 (project convention; not MCMIPL's multi-turn hDCG formula).
+  - protocol_interrec_item_id: direct_* columns when present — strict item-ID
+    hit vs future_test in top-10; best aligned with InterRec-style ID success.
+
 Usage:
     python parse_taira_metrics.py <result_csv> <out_json> [seed]
 """
@@ -46,6 +52,30 @@ def parse_csv(csv_path: str, seed: int = 0) -> dict:
         metrics["direct_HR@10"] = round(float(df_data["direct_hr10"].mean()), 4)
         metrics["direct_MRR@10"] = round(float(df_data["direct_mrr"].mean()), 4)
         metrics["direct_NDCG@10"] = round(float(df_data["direct_ndcg"].mean()), 4)
+        metrics["protocol_interrec_item_id"] = {
+            "_note": (
+                "Top-10 推荐列表中的 item id 与 future_test 目标 id 集合求交；"
+                "与 InterRec（method1）在同数据、同 ID 命中定义下最具可比性。"
+                "（与 LLM 打分的 HR@10/NDCG 可分离报告。）"
+            ),
+            "HR@10": metrics["direct_HR@10"],
+            "MRR@10": metrics["direct_MRR@10"],
+            "NDCG@10": metrics["direct_NDCG@10"],
+        }
+
+    hr10 = metrics["HR@10"]
+    ndcg10 = metrics["NDCG@10"]
+    metrics["main_table_interrec_paradigm"] = {
+        "_note": (
+            "单轮 TAIRA：与 MCMIPL/主表「多轮 SR@K」列对齐时，SR@5=SR@10=SR@15=HR@10（LLM 评估）；"
+            "AvgT 固定为 1；hDCG 列本项目约定填 NDCG@10（与对话式 hDCG 公式不同，正文需脚注）。"
+        ),
+        "SR@5": hr10,
+        "SR@10": hr10,
+        "SR@15": hr10,
+        "AvgT": 1.0,
+        "hDCG": ndcg10,
+    }
     return metrics
 
 

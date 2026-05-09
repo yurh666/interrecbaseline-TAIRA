@@ -130,6 +130,22 @@ Belief: μ = weighted avg of 历史 item embeddings
 | HR@10 | ≈ SR@15 | HR@10 | HitRate@10 |
 | NDCG@10 | 可计算 | NDCG@10 | NDCG@10 |
 
+### 3.4 对照 InterRec（method1）时应使用哪些 TAIRA 结果？
+
+跑完每个 seed 后，请用 **`python scripts/parse_taira_metrics.py <result_csv> results/metrics/run_<dataset>_seed<n>.json n>`**（与 `main.py` 同源 Python 环境）生成 JSON。**不要只手算 CSV**：解析脚本已从 `results/metrics/` 写出与主表对齐的字段。
+
+读数时请区分 **三层含义**：
+
+| 层次 | JSON 字段 | 含义 | 与 method1 |
+|------|-----------|------|-------------|
+| **A. TAIRA 流水线原生** | `SR`（`fail` 计数）、`HR@10`、`MRR@10`、`NDCG@10` | LLM-as-judge 的命中/排序质量；`SR` 为「未成任务失败」比例 | InterRec **若也用 LLM judge**才可并列；一般不单独作为主表 vs method1 的**唯一依据** |
+| **B. 主表范式映射（对话列）** | `main_table_interrec_paradigm` | **`SR@5=SR@10=SR@15= HR@10`（同上 LLM HR）**，`AvgT=1`，`hDCG=NDCG@10`**（脚注：非 MCMIPL 对话 hDCG 公式）** | 便于与 **MCMIPL** 同列排版；见 §3.1 |
+| **C. Item-ID 硬协议（最贴 method1）** | `protocol_interrec_item_id`、`direct_*` | `main.py` 把推荐 id 与 `future_test` id 集合做交集的 **HR@10 / MRR / NDCG** | **与 InterRec「物品 ID 是否出现在 top-10」最接近**；若 method1 主表也用 ID 命中率，应以 **这一路为主**对照 |
+
+CSV 中原列：`direct_hr10`、`direct_mrr`、`direct_ndcg`。**若某域 CSV 缺失这些列，需补 `main.py` 评测段再跑。**
+
+**推荐写作**：正文主表可同时报告 **（B）** 与 MCMIPL 并排；附录或脚注强调 **method1 vs TAIRA 的公平对决看（C）**。
+
 ---
 
 ## 四、实验配置
