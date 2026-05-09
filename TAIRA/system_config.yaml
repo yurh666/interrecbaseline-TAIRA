@@ -1,0 +1,15 @@
+QUERY_NUMBER: 500
+TOPN_ITEMS: 500
+TOPK_ITEMS: 10
+DOMAIN: "lastfm"
+
+MODEL: "deepseek-chat"
+
+METHOD: "TAIRA"
+
+OPENAI_BASE_URL: "https://api.deepseek.com/v1"
+OPENAI_API_KEY: "sk-dfb671f293d440dbad659e3820a9ef9f"
+
+GOOGLE_API_KEY: ""
+GOOGLE_CSE_ID: ""
+ENABLE_LEARNING: false

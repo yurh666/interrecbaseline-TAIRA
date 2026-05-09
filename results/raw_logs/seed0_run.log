@@ -1,0 +1,105 @@
+[seed0] Found incomplete run (1/69 done): /root/main_table_experiments/baselines/taira_official/TAIRA/data/amazon_music/logs/TAIRA-2026-05-08 20_30_39/result-TAIRA-2026-05-08 20_30_39.csv
+[seed0] Starting at Fri May  8 20:32:34 CST 2026
+usage: main_resume.py [-h] [--resume-csv RESUME_CSV]
+main_resume.py: error: unrecognized arguments: 20_30_39/result-TAIRA-2026-05-08 20_30_39.csv
+[seed0] Starting at Fri May  8 20:33:34 CST 2026
+Traceback (most recent call last):
+  File "/root/main_table_experiments/baselines/taira_official/TAIRA/main_resume.py", line 136, in main
+    hit_rate, mrr, ndcg, fail_flag, pattern_key = manager.delegate_task()
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/main_table_experiments/baselines/taira_official/TAIRA/core/manager_core.py", line 86, in delegate_task
+    result = self._execute_hierarchical_plan(initial_plan, thought_pattern)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/main_table_experiments/baselines/taira_official/TAIRA/core/manager_core.py", line 193, in _execute_hierarchical_plan
+    new_tasks = json.loads(new_plan)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/taira/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/taira/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/taira/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 19 column 3 (char 703)
+Configuration: {'QUERY_NUMBER': 500, 'TOPN_ITEMS': 500, 'TOPK_ITEMS': 10, 'DOMAIN': 'amazon_music', 'MODEL': 'deepseek-chat', 'METHOD': 'TAIRA', 'OPENAI_BASE_URL': 'https://api.deepseek.com/v1', 'ENABLE_LEARNING': False}
+Results CSV: data/amazon_music/logs/TAIRA-2026-05-08 20_33_35/result-TAIRA-2026-05-08 20_33_35.csv
+Total queries to run: 69 / 69
+Building BM25 index for 302803 items...
+BM25 index ready.
+Processing query 3 (id=B0017LFKOC)
+Processing query 8 (id=B0000C3I5V)
+Processing query 10 (id=B003TOS93O)
+Processing query 13 (id=B000002GJS)
+Processing query 17 (id=B000007OD2)
+Processing query 22 (id=B01GUBRPB4)
+Processing query 26 (id=B000ND91SG)
+Processing query 30 (id=B0000D9WWR)
+Processing query 35 (id=B000I6B9CY)
+Processing query 40 (id=B000001KT7)
+Processing query 43 (id=B0000073CC)
+Processing query 45 (id=B000002ALT)
+Processing query 47 (id=B002HMHRAK)
+Processing query 50 (id=B000B5IPLK)
+Processing query 66 (id=B007W1449I)
+Processing query 83 (id=B00009IB5U)
+Processing query 96 (id=B000T28FRO)
+Processing query 97 (id=B09QFDJSRN)
+Processing query 106 (id=B00005Q7G0)
+Processing query 108 (id=B0000E3HZW)
+Processing query 109 (id=B00006JO4Q)
+Processing query 111 (id=B0141GTKNG)
+Processing query 131 (id=B000002TOC)
+Processing query 136 (id=B00005YW4H)
+Processing query 143 (id=B015RD3L4Q)
+Processing query 161 (id=B00000DRYQ)
+Processing query 165 (id=B08WP9GK1Q)
+Processing query 166 (id=B000040OCD)
+Processing query 168 (id=B000007RU1)
+Processing query 171 (id=B000O178BY)
+Processing query 172 (id=B0000009ZV)
+Processing query 173 (id=B0000AGWEC)
+Processing query 186 (id=B000002UUM)
+Processing query 189 (id=B007WVJQLE)
+Processing query 205 (id=B000077SX4)
+Processing query 206 (id=B003EH3IZ0)
+Processing query 215 (id=B000AADYYO)
+Processing query 217 (id=B003O5MO2A)
+Processing query 221 (id=B084CS7T6G)
+Processing query 225 (id=B000002PHN)
+Processing query 239 (id=B0000028TU)
+Processing query 243 (id=B0010DJ1C4)
+Processing query 245 (id=B0001XALH8)
+Processing query 251 (id=B003NWS5AO)
+Processing query 252 (id=B00000BIK4)
+Processing query 261 (id=B0002OERI0)
+Processing query 262 (id=B000BM7U7I)
+Processing query 269 (id=B000B5KR2A)
+Processing query 274 (id=B00005S85L)
+Processing query 276 (id=B000084U3P)
+Processing query 292 (id=B000000WFF)
+Processing query 295 (id=B000002U0R)
+Processing query 302 (id=B000002I3Y)
+Error processing query 302: Expecting ',' delimiter: line 19 column 3 (char 703)
+Processing query 303 (id=B07FSVYRXJ)
+Processing query 304 (id=B00000E5MU)
+Processing query 308 (id=B00028X26Y)
+Processing query 310 (id=B00003002E)
+Processing query 313 (id=B007RV4BDW)
+Processing query 319 (id=B004LP601S)
+Processing query 331 (id=B00VXGTJMU)
+Processing query 334 (id=B000000NY4)
+Processing query 342 (id=B01N7UHKP0)
+Processing query 348 (id=B000002IYS)
+Processing query 356 (id=B000002MNF)
+Processing query 367 (id=B00016MT6Q)
+Processing query 369 (id=B000JCETC4)
+Processing query 381 (id=B000095J4W)
+Processing query 390 (id=B000002J01)
+Processing query 393 (id=B000H0MKGA)
+
+=== Run complete. Completed this run: 69 queries ===
+Results saved to data/amazon_music/logs/TAIRA-2026-05-08 20_33_35/result-TAIRA-2026-05-08 20_33_35.csv
+hit_rate=0.2460  mrr=0.4396  ndcg=0.3669  success_rate=0.4493
+[seed0] Finished at Fri May  8 21:45:05 CST 2026

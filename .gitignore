@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+.idea/
+
+# Local env (optional; you may track conda env.yml instead)
+.venv/
+venv/
+
+# Regenerable experiment logs (per-query); keep result-*.csv in logs dirs
+**/data/*/logs/**/*.log
+
+# Redundant upstream bundle (tracked code lives under TAIRA/)
+TAIRA_master.zip

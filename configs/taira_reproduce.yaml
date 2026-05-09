@@ -1,0 +1,25 @@
+# TAIRA Reproduction Config
+# DO NOT hardcode API keys here in production.
+# Keys are also accepted via env vars: OPENAI_API_KEY, OPENAI_BASE_URL.
+# This file is a reference snapshot used for reproduction documentation.
+
+QUERY_NUMBER: 500
+TOPN_ITEMS: 500
+TOPK_ITEMS: 10
+DOMAIN: "amazon_music"
+
+MODEL: "deepseek-chat"
+# NOTE: Official TAIRA uses GPT-4o. We use DeepSeek-chat as a cost-effective
+# alternative. This deviation is documented in taira_reproduction_report.md.
+
+METHOD: "TAIRA"
+
+OPENAI_BASE_URL: "https://api.deepseek.com/v1"
+OPENAI_API_KEY: ""   # Set via env or system_config.yaml (not committed)
+
+GOOGLE_API_KEY: ""   # Not used; replaced by BM25 on local knowledge1.csv
+GOOGLE_CSE_ID: ""    # Not used; see patch notes in item_retrieval_agent.py
+
+ENABLE_LEARNING: false
+# NOTE: ENABLE_LEARNING=false disables Thought Pattern Distillation (TPD) update.
+# Patterns are still USED for matching (read-only). This matches inference mode.
