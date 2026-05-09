@@ -1,20 +1,36 @@
 #!/usr/bin/env bash
 # run_lastfm_seeds.sh
-# Run TAIRA on LastFM dataset for 3 seeds sequentially
+# Run TAIRA on LastFM for one or more seeds (default 0 1 2).
+#
+# Examples:
+#   bash scripts/run_lastfm_seeds.sh              # seeds 0 1 2
+#   bash scripts/run_lastfm_seeds.sh 2            # only seed 2 (新机器续跑)
+#   bash scripts/run_lastfm_seeds.sh 0 1          # seeds 0 and 1
+#   TAIRA_LASTFM_SEEDS="0 1" bash scripts/run_lastfm_seeds.sh   # 不在本机跑 seed2
+#
+set -euo pipefail
 
-set -e
-TAIRA_DIR="/root/main_table_experiments/baselines/taira_official/TAIRA"
-SCRIPTS_DIR="/root/main_table_experiments/baselines/taira_official/scripts"
-LOG_BASE="/root/main_table_experiments/baselines/taira_official/results"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+TAIRA_DIR="$REPO_ROOT/TAIRA"
+SCRIPTS_DIR="$SCRIPT_DIR"
+LOG_BASE="$REPO_ROOT/results"
 
-mkdir -p "$LOG_BASE"
+mkdir -p "$LOG_BASE/metrics"
 
-echo "[$(date)] Starting TAIRA lastfm experiment - 3 seeds"
+if [[ $# -gt 0 ]]; then
+  SEEDS=( "$@" )
+else
+  # shellcheck disable=SC2206
+  SEEDS=( ${TAIRA_LASTFM_SEEDS:-0 1 2} )
+fi
+
+echo "[$(date)] Starting TAIRA lastfm — seeds: ${SEEDS[*]}"
 echo "TAIRA_DIR: $TAIRA_DIR"
 
 cd "$TAIRA_DIR"
 
-for SEED in 0 1 2; do
+for SEED in "${SEEDS[@]}"; do
     echo ""
     echo "============================================="
     echo "[$(date)] Running seed=$SEED"
@@ -24,14 +40,14 @@ for SEED in 0 1 2; do
 
     echo "[$(date)] Seed $SEED done."
 
-    # Parse results for this seed
     LATEST_LOG_DIR=$(ls -td "$TAIRA_DIR/data/lastfm/logs"/TAIRA-* | head -1)
     LATEST_CSV=$(ls -t "$LATEST_LOG_DIR"/*.csv 2>/dev/null | head -1)
 
-    if [ -n "$LATEST_CSV" ]; then
+    if [[ -n "$LATEST_CSV" ]]; then
         echo "[$(date)] Parsing results from: $LATEST_CSV"
-        mkdir -p "$LOG_BASE/metrics"
-        python3 "$SCRIPTS_DIR/parse_taira_metrics.py" \
+        PY=python3
+        command -v python3 >/dev/null 2>&1 || PY=python
+        "$PY" "$SCRIPTS_DIR/parse_taira_metrics.py" \
             "$LATEST_CSV" \
             "$LOG_BASE/metrics/run_lastfm_seed${SEED}.json" \
             "$SEED"
@@ -41,8 +57,5 @@ for SEED in 0 1 2; do
     fi
 done
 
-
 echo ""
-echo "[$(date)] Seed 0 done for lastfm. Run other datasets with:"
-echo "  DOMAIN=yelp bash .../run_taira_one_dataset.sh"
-echo "Or wait for all lastfm seeds to finish."
+echo "[$(date)] LastFM seeds finished: ${SEEDS[*]}"
