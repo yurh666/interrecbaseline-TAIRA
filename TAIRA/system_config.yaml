@@ -1,14 +1,19 @@
 QUERY_NUMBER: 500
 TOPN_ITEMS: 500
 TOPK_ITEMS: 10
-DOMAIN: "lastfm"
+DOMAIN: "amazon_book"
 
 MODEL: "deepseek-chat"
 
 METHOD: "TAIRA"
 
+# Prefer environment variables (see TAIRA/utils/task.py): OPENAI_API_KEY, OPENAI_BASE_URL
 OPENAI_BASE_URL: "https://api.deepseek.com/v1"
-OPENAI_API_KEY: "sk-dfb671f293d440dbad659e3820a9ef9f"
+OPENAI_API_KEY: ""
+
+# BGE item retrieval (required): run scripts/precompute_bge_embeddings.py per domain first.
+BGE_M3_MODEL: "BAAI/bge-m3"
+BGE_RERANKER_MODEL: "BAAI/bge-reranker-base"
 
 GOOGLE_API_KEY: ""
 GOOGLE_CSE_ID: ""

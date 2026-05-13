@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Collect TAIRA per-seed metrics JSONs and write to comparison/results/taira_results.csv.
-Also writes mean ± std summary.
+Collect TAIRA per-seed metrics JSONs and write results/taira_results.csv under repo root.
+If a legacy layout exists (../comparison/results/), mirror the same CSV there.
 
 Usage:
-    cd taira_official
+    cd "$(git rev-parse --show-toplevel)"
     python scripts/collect_taira_results.py
 """
 import json
@@ -15,8 +15,10 @@ import statistics
 from pathlib import Path
 
 
-METRIC_DIR = Path(__file__).parent.parent / "results" / "metrics"
-OUT_DIR = Path(__file__).parent.parent.parent.parent / "comparison" / "results"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+METRIC_DIR = REPO_ROOT / "results" / "metrics"
+OUT_DIR = REPO_ROOT / "results"
+_LEGACY_COMPARISON_DIR = REPO_ROOT.parent / "comparison" / "results"
 
 
 def collect():
@@ -77,6 +79,15 @@ def collect():
         w.writeheader()
         w.writerows(rows)
     print(f"Written {len(rows)} rows to {out_csv}")
+
+    if (REPO_ROOT.parent / "comparison").is_dir():
+        _LEGACY_COMPARISON_DIR.mkdir(parents=True, exist_ok=True)
+        legacy_csv = _LEGACY_COMPARISON_DIR / "taira_results.csv"
+        with legacy_csv.open("w", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=fieldnames)
+            w.writeheader()
+            w.writerows(rows)
+        print(f"Mirrored to {legacy_csv}")
 
     # Summary: mean ± std per domain
     from collections import defaultdict

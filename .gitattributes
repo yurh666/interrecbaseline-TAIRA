@@ -1,0 +1,4 @@
+# Large embedding matrices — use Git LFS before committing:
+#   git lfs install
+#   git lfs track 'TAIRA/data/**/project_embeddings.npy'
+TAIRA/data/**/project_embeddings.npy filter=lfs diff=lfs merge=lfs -text
