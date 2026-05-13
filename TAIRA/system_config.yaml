@@ -11,9 +11,17 @@ METHOD: "TAIRA"
 OPENAI_BASE_URL: "https://api.deepseek.com/v1"
 OPENAI_API_KEY: ""
 
-# BGE item retrieval (required): run scripts/precompute_bge_embeddings.py per domain first.
+# BGE-M3 checkpoints (offline precompute / optional hybrid ``ITEM_RETRIEVAL_RANKING_BACKEND: bge``):
 BGE_M3_MODEL: "BAAI/bge-m3"
 BGE_RERANKER_MODEL: "BAAI/bge-reranker-base"
+
+# --- Item retrieval at inference (CPU + LLM API) ---
+# BGE-M3 is used only in offline precompute (scripts/precompute_bge_embeddings.py, GPU).
+# Online: BM25 over the item catalog for all paths; SearcherAgent already uses BM25 on knowledge CSV.
+ITEM_RETRIEVAL_RANKING_BACKEND: "bm25"
+ITEM_RETRIEVAL_KEYWORD_BACKEND: "bm25"
+BM25_FALLBACK_TO_BGE: false
+BM25_FALLBACK_MIN_SCORE: 0.0
 
 GOOGLE_API_KEY: ""
 GOOGLE_CSE_ID: ""

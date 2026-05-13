@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Precompute BGE-M3 dense vectors for all items in a domain (GPU strongly recommended).
-Writes:
-  TAIRA/data/<domain>/project_embeddings.npy   shape (N, D), float32, L2-normalized rows
-  TAIRA/data/<domain>/bge_embedding_manifest.json
+Precompute BGE-M3 dense vectors for all items in a domain (**CUDA required** by default; use ``--allow-cpu`` only for debugging).
+Writes (under ``TAIRA_EMBEDDINGS_ROOT/<domain>/`` if that env is set, else ``TAIRA/data/<domain>/``):
+  project_embeddings.npy   shape (N, D), float32, L2-normalized rows
+  bge_embedding_manifest.json
 
 Run from repository root:
   cd /path/to/interrecbaseline-TAIRA
@@ -29,11 +29,27 @@ os.chdir(TAIRA_ROOT)
 import yaml  # noqa: E402
 from FlagEmbedding import BGEM3FlagModel  # noqa: E402
 
+from utils.embeddings_paths import domain_embedding_artifacts_dir  # noqa: E402
 from utils.item_catalog import load_items_metadata  # noqa: E402
 
 
 INTERREC_DOMAINS = ("lastfm", "yelp", "movielens", "amazon_book")
 ALL_KNOWN = INTERREC_DOMAINS + ("amazon_clothing", "amazon_beauty", "amazon_music")
+
+CANONICAL_BGE_M3 = "BAAI/bge-m3"
+
+
+def _manifest_model_id(load_path: str) -> str:
+    """Manifest 里固定写 ``BAAI/bge-m3``，即便权重从本机目录加载。"""
+    norm = load_path.replace("\\", "/").rstrip("/")
+    if norm == CANONICAL_BGE_M3 or "models--BAAI--bge-m3" in norm:
+        return CANONICAL_BGE_M3
+    last = os.path.basename(norm)
+    if last in ("BAAI-bge-m3", "bge-m3"):
+        return CANONICAL_BGE_M3
+    if norm.endswith("/bge-m3"):
+        return CANONICAL_BGE_M3
+    return load_path
 
 
 def _load_model_name() -> str:
@@ -43,7 +59,13 @@ def _load_model_name() -> str:
     return cfg.get("BGE_M3_MODEL", "BAAI/bge-m3")
 
 
-def precompute_domain(domain: str, batch_size: int, model_name: str | None = None) -> None:
+def precompute_domain(
+    domain: str,
+    batch_size: int,
+    model_name: str | None = None,
+    *,
+    allow_cpu: bool = False,
+) -> None:
     model_name = model_name or _load_model_name()
     df = load_items_metadata(domain, domain_root="data")
     texts = df["project_info"].astype(str).tolist()
@@ -51,16 +73,18 @@ def precompute_domain(domain: str, batch_size: int, model_name: str | None = Non
     if n == 0:
         raise RuntimeError(f"No rows for domain={domain}")
 
-    print(f"[{domain}] Loading {model_name} …")
-    use_fp16 = True
-    try:
-        import torch
+    import torch
 
-        if not torch.cuda.is_available():
-            use_fp16 = False
-            print(f"[{domain}] CUDA not available; use_fp16=False (slower on CPU).")
-    except Exception:
-        use_fp16 = False
+    if not torch.cuda.is_available():
+        if not allow_cpu:
+            raise RuntimeError(
+                f"[{domain}] CUDA is required for BGE-M3 precompute (refuse CPU). "
+                "Pass --allow-cpu to override (slow / not for production runs)."
+            )
+        print(f"[{domain}] WARNING: --allow-cpu set; encoding on CPU (very slow).")
+
+    use_fp16 = bool(torch.cuda.is_available())
+    print(f"[{domain}] Loading {model_name} … (cuda={torch.cuda.is_available()}, use_fp16={use_fp16})")
 
     model = BGEM3FlagModel(model_name, use_fp16=use_fp16)
 
@@ -76,19 +100,21 @@ def precompute_domain(domain: str, batch_size: int, model_name: str | None = Non
     norms[norms == 0] = 1e-12
     emb = emb / norms
 
-    out_npy = os.path.join("data", domain, "project_embeddings.npy")
+    art_dir = domain_embedding_artifacts_dir(domain)
+    os.makedirs(art_dir, exist_ok=True)
+    out_npy = os.path.join(art_dir, "project_embeddings.npy")
     np.save(out_npy, emb)
 
     manifest = {
         "domain": domain,
-        "model": model_name,
+        "model": _manifest_model_id(model_name),
         "n_items": int(emb.shape[0]),
         "embedding_dim": int(emb.shape[1]),
         "dtype": "float32",
         "l2_normalized_rows": True,
         "source": "scripts/precompute_bge_embeddings.py",
     }
-    man_path = os.path.join("data", domain, "bge_embedding_manifest.json")
+    man_path = os.path.join(art_dir, "bge_embedding_manifest.json")
     with open(man_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2)
 
@@ -105,6 +131,11 @@ def main():
     )
     ap.add_argument("--batch-size", type=int, default=64)
     ap.add_argument("--model", default=None, help="Override BGE-M3 id (default: system_config BGE_M3_MODEL).")
+    ap.add_argument(
+        "--allow-cpu",
+        action="store_true",
+        help="Allow running without CUDA (debug only; strongly discouraged).",
+    )
     args = ap.parse_args()
 
     if args.all_interrec_domains:
@@ -117,7 +148,12 @@ def main():
     for d in doms:
         if d not in ALL_KNOWN:
             print(f"Warning: domain {d} not in known list {ALL_KNOWN}; continuing anyway.")
-        precompute_domain(d, batch_size=args.batch_size, model_name=args.model)
+        precompute_domain(
+            d,
+            batch_size=args.batch_size,
+            model_name=args.model,
+            allow_cpu=args.allow_cpu,
+        )
 
 
 if __name__ == "__main__":

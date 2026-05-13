@@ -1,0 +1,15 @@
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+=== BGE-M3 GPU / consistency evidence ===
+torch: 2.5.1+cu124 cuda_available: True
+device_0: NVIDIA GeForce RTX 4080 SUPER
+
+-- Loading model --
+-- First encode (lazy GPU init in typical FlagEmbedding paths) --
+output dense_vecs shape: (1, 1024) storage device (returned tensor): cpu
+first_parameter device: cuda:0
+cuda memory [bytes]: after_load delta= 0 after_encode delta= 1146263040
+
+-- Consistency vs /root/autodl-tmp/interrecbaseline-TAIRA/embeddings/lastfm/project_embeddings.npy --
+cosine(row0, fresh_encode text0): 0.99999868659577
+
+OK: evidence consistent with BGE-M3 forward on CUDA for this run.

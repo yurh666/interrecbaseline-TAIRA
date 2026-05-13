@@ -25,6 +25,7 @@ os.chdir(TAIRA_ROOT)
 import yaml  # noqa: E402
 from FlagEmbedding import BGEM3FlagModel, FlagReranker  # noqa: E402
 
+from utils.embeddings_paths import domain_embedding_artifacts_dir  # noqa: E402
 from utils.item_catalog import load_items_metadata  # noqa: E402
 
 
@@ -34,8 +35,9 @@ def main():
     args = ap.parse_args()
     domain = args.domain
 
-    man_path = os.path.join("data", domain, "bge_embedding_manifest.json")
-    npy_path = os.path.join("data", domain, "project_embeddings.npy")
+    art = domain_embedding_artifacts_dir(domain)
+    man_path = os.path.join(art, "bge_embedding_manifest.json")
+    npy_path = os.path.join(art, "project_embeddings.npy")
     if not os.path.isfile(npy_path) or not os.path.isfile(man_path):
         print(f"FAIL: missing {npy_path} or {man_path}; run precompute_bge_embeddings.py first")
         sys.exit(2)

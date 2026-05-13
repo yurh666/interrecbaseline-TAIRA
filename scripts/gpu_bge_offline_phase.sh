@@ -5,7 +5,23 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_ROOT"
 
+# AutoDL / fat artifacts: keep npy + HF cache off the small system disk (override any of these as needed).
+AUTODL_ARTIFACTS_ROOT="${AUTODL_ARTIFACTS_ROOT:-/root/autodl-tmp/interrecbaseline-TAIRA}"
+export TAIRA_EMBEDDINGS_ROOT="${TAIRA_EMBEDDINGS_ROOT:-$AUTODL_ARTIFACTS_ROOT/embeddings}"
+export HF_HOME="${HF_HOME:-$AUTODL_ARTIFACTS_ROOT/huggingface}"
+export TMPDIR="${TMPDIR:-$AUTODL_ARTIFACTS_ROOT/tmp}"
+export PIP_CACHE_DIR="${PIP_CACHE_DIR:-/root/autodl-tmp/pip-cache}"
+mkdir -p "$TAIRA_EMBEDDINGS_ROOT" "$HF_HOME" "$TMPDIR" "$PIP_CACHE_DIR"
+
+# If huggingface.co is unreachable, set e.g. HF_ENDPOINT=https://hf-mirror.com before calling this script.
+if [[ -n "${HF_ENDPOINT:-}" ]]; then
+  export HF_ENDPOINT
+  echo "    HF_ENDPOINT=$HF_ENDPOINT"
+fi
+
 echo "== TAIRA BGE offline phase (repo root: $REPO_ROOT) =="
+echo "    TAIRA_EMBEDDINGS_ROOT=$TAIRA_EMBEDDINGS_ROOT"
+echo "    HF_HOME=$HF_HOME"
 
 if ! command -v python3 >/dev/null 2>&1; then
   echo "ERROR: python3 not found"
@@ -39,7 +55,11 @@ else
 fi
 
 echo "Done. Suggested next steps:"
+echo "  # Git/LFS expects files under TAIRA/data/<domain>/ (embeddings are under \$TAIRA_EMBEDDINGS_ROOT):"
+echo "  for d in lastfm yelp movielens amazon_book; do mkdir -p \"TAIRA/data/\$d\"; cp -a \"\$TAIRA_EMBEDDINGS_ROOT/\$d/project_embeddings.npy\" \"\$TAIRA_EMBEDDINGS_ROOT/\$d/bge_embedding_manifest.json\" \"TAIRA/data/\$d/\"; done"
 echo "  git add .gitattributes TAIRA/data/*/project_embeddings.npy TAIRA/data/*/bge_embedding_manifest.json"
 echo "  git commit -m \"data: BGE-M3 item embeddings (InterRec domains)\""
 echo "  git push origin main"
+echo "  # Phase 2 (same machine): export TAIRA_EMBEDDINGS_ROOT=\"$TAIRA_EMBEDDINGS_ROOT\""
+echo "  #   export OPENAI_API_KEY=... && ./scripts/run_taira_after_bge_embeddings.sh <domain>"
 

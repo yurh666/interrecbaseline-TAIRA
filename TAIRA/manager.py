@@ -210,6 +210,7 @@ class Manager:
         self.logger.debug('executing plan...')
         last_name = ''
         output = ''
+        prev_executed_agent = ''
         # print(task_plan)
         while last_name != "InteractorAgent":
             for sub_task_key in list(task_plan_json["sub_tasks"])[:-1]:
@@ -226,7 +227,11 @@ class Manager:
                         self.logger.debug("fail")
                         return 0, 0, 0, True, 0
                     self.turn += 1
-                    origin_output = agent.execute_task(query)
+                    if agent_name == "ItemRetrievalAgent":
+                        origin_output = agent.execute_task(query, prev_agent_name=prev_executed_agent)
+                    else:
+                        origin_output = agent.execute_task(query)
+                    prev_executed_agent = agent_name
                     output = str(origin_output)
                     # print("output:", output)
                     self.memory.add_observation(agent_name, query, output)

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# Phase 2: run TAIRA main experiments after TAIRA/data/<DOMAIN>/project_embeddings.npy exists.
+# Phase 2: run TAIRA main experiments after project_embeddings.npy exists for DOMAIN.
+# Default: TAIRA/data/<DOMAIN>/; or set TAIRA_EMBEDDINGS_ROOT (same as offline phase).
+# Item retrieval is hybrid: Searcher→Item uses BM25 (CPU), other Item steps use BGE (lazy GPU init).
 # Usage:
 #   export OPENAI_API_KEY=...
 #   export PYTHONHASHSEED=0
@@ -10,8 +12,14 @@ REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DOMAIN="${1:?usage: $0 <domain e.g. lastfm>}"
 
 CFG="$REPO_ROOT/TAIRA/system_config.yaml"
-NPY="$REPO_ROOT/TAIRA/data/$DOMAIN/project_embeddings.npy"
-MAN="$REPO_ROOT/TAIRA/data/$DOMAIN/bge_embedding_manifest.json"
+if [[ -n "${TAIRA_EMBEDDINGS_ROOT:-}" ]]; then
+  EMB_BASE="$(cd "$TAIRA_EMBEDDINGS_ROOT" && pwd)"
+  NPY="$EMB_BASE/$DOMAIN/project_embeddings.npy"
+  MAN="$EMB_BASE/$DOMAIN/bge_embedding_manifest.json"
+else
+  NPY="$REPO_ROOT/TAIRA/data/$DOMAIN/project_embeddings.npy"
+  MAN="$REPO_ROOT/TAIRA/data/$DOMAIN/bge_embedding_manifest.json"
+fi
 
 if [[ ! -f "$NPY" || ! -f "$MAN" ]]; then
   echo "ERROR: Missing BGE artifacts for domain=$DOMAIN"

@@ -106,6 +106,7 @@ class TAIRAManager:
 
         output = ""
         last_agent_name = ""
+        prev_executed_agent = ""
 
         while last_agent_name != "InteractorAgent":
             if self.turn >= 10:
@@ -137,7 +138,11 @@ class TAIRAManager:
                     return 0, 0, 0, True
 
                 self.turn += 1
-                output = str(agent.execute_task(query))
+                if agent_name == "ItemRetrievalAgent":
+                    output = str(agent.execute_task(query, prev_agent_name=prev_executed_agent))
+                else:
+                    output = str(agent.execute_task(query))
+                prev_executed_agent = agent_name
 
                 self.memory.add_observation(agent_name, query, output)
                 self.execution_log.append({

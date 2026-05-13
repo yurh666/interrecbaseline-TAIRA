@@ -1,0 +1,9 @@
+{
+  "domain": "lastfm",
+  "model": "BAAI/bge-m3",
+  "n_items": 2665,
+  "embedding_dim": 1024,
+  "dtype": "float32",
+  "l2_normalized_rows": true,
+  "source": "scripts/precompute_bge_embeddings.py"
+}
