@@ -16,6 +16,12 @@
 - **MovieLens：** 对齐 README 数据名 **`MOVIE`**。**seed1** 日志 **缺失最终 `best` 块** → SR10 **仅用 seed0+2**（已标注 **n=2**）。  
 - **Yelp：** Phase B **`YELP_STAR`** **未完成** → **全 —**。
 
+### 为何主表不能填 NDCG@10 / MRR@10（并非“漏算”）
+
+1. **评测程序未实现 IR 意义上的 NDCG/MRR。** 官方 `dqn_evaluate` 只累积 **SR5/SR10/SR15**（在多少**对话轮次**内命中目标 item）、**AvgT**、以及一个由成功轮次 \(t\) 代入对数公式得到的标量 **`Rank`**；**没有**对每个 test user 维护「ground-truth 在 Top-10 候选排序中的名次」。(见 `RL_evaluate.py` 中 `Rank += (1/log(t+3,2)+...)` 及对 `SR10` 的计数方式。)
+2. **`tmp/.../RL-log-merge/` 里写的 “Testing hDCG” 实际是上述 `Rank`，不是标准 NDCG@10。** `utils.save_rl_mtric` 把 `SR[4]` 打印成 `hDCG`，与推荐系统文献中的 NDCG 不是同一定义；**不能**把它填进主表的 NDCG@10 列。
+3. **已落盘工件缺少反算所需信息。** 若要算标准 **NDCG@10 / MRR@10**，至少需要每个 session 的 **最终（或每轮）有序推荐列表**以及 **目标 item 在该列表中的 rank**；当前 tee 日志与 RL-log-merge **仅含聚合标量**，没有 per-user 排序明细，故 **无法从旧 run 离线补算**，除非 **改评测代码并重新跑评测**。
+
 ### Markdown 主表
 
 | Method | LastFM SR@10 ↑ | LastFM NDCG@10 ↑ | LastFM MRR@10 ↑ | LastFM Ask ↓ | MovieLens SR@10 ↑ | MovieLens NDCG@10 ↑ | MovieLens MRR@10 ↑ | MovieLens Ask ↓ | Yelp SR@10 ↑ | Yelp NDCG@10 ↑ | Yelp MRR@10 ↑ | Yelp Ask ↓ |

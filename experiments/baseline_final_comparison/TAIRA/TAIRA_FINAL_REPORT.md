@@ -28,32 +28,41 @@
 
 ## 0. 核心主表（LastFM / MovieLens / Yelp）
 
-**箭头：** ↑ 越大越好；↓ 越小越好。**Ask** 为用户侧显性提问轮次（或可比你方 pipeline 定义的 `avg_ask_count`）。
+**箭头：** ↑ 越大越好；↓ 越小越好。**Ask** 为用户侧显性提问轮次（或你方 pipeline 的 `avg_ask_count`）。
 
-**TAIRA 行约定（避免与多轮 CRS 混淆）：**
+**TAIRA 行指标约定（必读）：**
 
-- **SR@10**：本仓库单轮 TAIRA 与主表对齐时采用桥接 **`SR@10 := HR@10`（LLM 评估列）**，见 `main_table_interrec_paradigm` / `parse_taira_metrics.py` 脚注；**不是**多轮对话内「第 10 轮内首次成功」的 CRS 定义。  
-- **NDCG@10 / MRR@10**：同为 **LLM 评估**列的 mean。  
-- **Ask**：TAIRA **无用户偏好澄清提问闭环**，记为 **0.00 ± 0.00**。  
-- 数值为 **三 seed（0–2）的 mean ± std**，来源 `results/EXPERIMENT_SUMMARY.md` / `results/taira_results.csv`。
+| 列族 | 含义 |
+|------|------|
+| **SR@5 / SR@10** | **表对齐桥接**：与本仓库 `main_table_interrec_paradigm` 一致，**`SR@5 = SR@10 = HR@10`（LLM 对整表 `hit_rate`/NDCG/MRR 的那一列）**，**不是**多轮 CRS「第 K 轮内成功」语义。 |
+| **Recall@5** | **自下式重算**：对 `results/checkpoints/<域>/seed_<s>/` 中第 `i` 行 CSV 对应 `log_{i+1}.log` 内最后一条 **`relevance_scores`（长度 10）**；若前五维中 **任一 ≥ 1.0**（与 LLM 「满相关」刻度一致）则该 query 记 **1**，否则 **0**；**log 缺失或无法解析**时记 **0**。再对 query 取平均，并对 **seed 0–2** 报告 **mean ± std**（seed 间 std）。 |
+| **NDCG@5** | **自下式重算**：对同一 `relevance_scores` 向量，取 **前 5 个位置**按 `TAIRA/user_simulate/evaluate_agent.py::calculate_ndcg` 的折扣公式计算；**log 缺失或无法解析**记 **0**。再 mean over queries，**mean ± std across seeds**。 |
+| **NDCG@10 / MRR@10** | `taira_results.csv` 聚合（LLM 列）。 |
+| **Ask** | TAIRA **无**用户侧澄清提问 → **0.00 ± 0.00**。 |
+
+> **重要：** 同一行里 **SR@5（桥接）≠ Recall@5（二值命中）≠ HR@10（连续型 hit_rate 聚合）**，三者不可混读；并排是为与 CRS 文献表头对齐 + 补足 Top‑5 粒度。
+
+数值来源：**SR*/NDCG@10/MRR@10** 来自 `results/EXPERIMENT_SUMMARY.md`；**Recall@5 / NDCG@5** 来自本机 **`results/checkpoints/`**（**未入库 Git**；若在仅有 `results/metrics/` 的机器上打开本报告，应重新跑下方脚本或对日志归档后再算）。
 
 ### Markdown 主表
 
-| Method | LastFM SR@10 ↑ | LastFM NDCG@10 ↑ | LastFM MRR@10 ↑ | LastFM Ask ↓ | MovieLens SR@10 ↑ | MovieLens NDCG@10 ↑ | MovieLens MRR@10 ↑ | MovieLens Ask ↓ | Yelp SR@10 ↑ | Yelp NDCG@10 ↑ | Yelp MRR@10 ↑ | Yelp Ask ↓ |
-|--------|----------------|------------------|-----------------|--------------|-------------------|---------------------|--------------------|-----------------|--------------|----------------|---------------|--------------|
-| MCMIPL | — | — | — | — | — | — | — | — | — | — | — | — |
-| TAIRA | 0.7224 ± 0.0123 | 0.8705 ± 0.0057 | 0.9214 ± 0.0024 | 0.00 ± 0.00 | 0.4774 ± 0.0026 | 0.6117 ± 0.0134 | 0.7024 ± 0.0106 | 0.00 ± 0.00 | 0.2956 ± 0.0081 | 0.3661 ± 0.0105 | 0.4202 ± 0.0149 | 0.00 ± 0.00 |
-| InterRec-v2 | — | — | — | — | — | — | — | — | — | — | — | — |
-| InterRec-v3 | — | — | — | — | — | — | — | — | — | — | — | — |
+| Method | LF SR@5 ↑ | LF Recall@5 ↑ | LF NDCG@5 ↑ | LF SR@10 ↑ | LF NDCG@10 ↑ | LF MRR@10 ↑ | LF Ask ↓ | ML SR@5 ↑ | ML Recall@5 ↑ | ML NDCG@5 ↑ | ML SR@10 ↑ | ML NDCG@10 ↑ | ML MRR@10 ↑ | ML Ask ↓ | Y SR@5 ↑ | Y Recall@5 ↑ | Y NDCG@5 ↑ | Y SR@10 ↑ | Y NDCG@10 ↑ | Y MRR@10 ↑ | Y Ask ↓ |
+|--------|-----------|---------------|-------------|------------|--------------|-------------|----------|-----------|----------------|-------------|-------------|--------------|-------------|----------|----------|---------------|-------------|-----------|--------------|-------------|----------|
+| MCMIPL | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — |
+| TAIRA | 0.7224 ± 0.0123 | 0.7814 ± 0.0049 | 0.7128 ± 0.0068 | 0.7224 ± 0.0123 | 0.8705 ± 0.0057 | 0.9214 ± 0.0024 | 0.00 ± 0.00 | 0.4774 ± 0.0026 | 0.5038 ± 0.0067 | 0.4297 ± 0.0177 | 0.4774 ± 0.0026 | 0.6117 ± 0.0134 | 0.7024 ± 0.0106 | 0.00 ± 0.00 | 0.2956 ± 0.0081 | 0.3625 ± 0.0144 | 0.3037 ± 0.0082 | 0.2956 ± 0.0081 | 0.3661 ± 0.0105 | 0.4202 ± 0.0149 | 0.00 ± 0.00 |
+| InterRec-v2 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — |
+| InterRec-v3 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — |
+
+**列缩：** LF=LastFM，ML=MovieLens，Y=Yelp。
 
 ### Tab 分隔（便于粘贴到表格 / LaTeX）
 
 ```text
-Method	LastFM SR@10 ↑	LastFM NDCG@10 ↑	LastFM MRR@10 ↑	LastFM Ask ↓	MovieLens SR@10 ↑	MovieLens NDCG@10 ↑	MovieLens MRR@10 ↑	MovieLens Ask ↓	Yelp SR@10 ↑	Yelp NDCG@10 ↑	Yelp MRR@10 ↑	Yelp Ask ↓
-MCMIPL												
-TAIRA	0.7224 ± 0.0123	0.8705 ± 0.0057	0.9214 ± 0.0024	0.00 ± 0.00	0.4774 ± 0.0026	0.6117 ± 0.0134	0.7024 ± 0.0106	0.00 ± 0.00	0.2956 ± 0.0081	0.3661 ± 0.0105	0.4202 ± 0.0149	0.00 ± 0.00
-InterRec-v2												
-InterRec-v3												
+Method	LF SR@5↑	LF Recall@5↑	LF NDCG@5↑	LF SR@10↑	LF NDCG@10↑	LF MRR@10↑	LF Ask↓	ML SR@5↑	ML Recall@5↑	ML NDCG@5↑	ML SR@10↑	ML NDCG@10↑	ML MRR@10↑	ML Ask↓	Y SR@5↑	Y Recall@5↑	Y NDCG@5↑	Y SR@10↑	Y NDCG@10↑	Y MRR@10↑	Y Ask↓
+MCMIPL																						
+TAIRA	0.7224 ± 0.0123	0.7814 ± 0.0049	0.7128 ± 0.0068	0.7224 ± 0.0123	0.8705 ± 0.0057	0.9214 ± 0.0024	0.00 ± 0.00	0.4774 ± 0.0026	0.5038 ± 0.0067	0.4297 ± 0.0177	0.4774 ± 0.0026	0.6117 ± 0.0134	0.7024 ± 0.0106	0.00 ± 0.00	0.2956 ± 0.0081	0.3625 ± 0.0144	0.3037 ± 0.0082	0.2956 ± 0.0081	0.3661 ± 0.0105	0.4202 ± 0.0149	0.00 ± 0.00
+InterRec-v2																						
+InterRec-v3																						
 ```
 
 ---
@@ -89,6 +98,8 @@ TAIRA 在本仓库已实现 **四域 × 各 3 seeds** 的 **指标落盘**（CSV
 **成本：** **`wall_time`、tokens、LLM HTTP 次数**在本仓库 CSV/JSON 中 **`not available`**，无法与 InterRec 做量化成本对标（需补账本）。
 
 **与 InterRec 公平比较：** 在 **不配对话轮次定义桥、不配 session manifest** 的前提下，整体为 **`partially comparable`**：可在「同源预处理域数据 + Top-10」层面讨论趋势，但 **不能把多轮 CRS 的 `SR@K` 与 TAIRA 单轮 LLM-HR 无定义地并排当同一主结论**。
+
+**§0 主表补充：** 已列 **SR@5（桥接=`HR@10`）**、从检查点 **重算的 `Recall@5` / `NDCG@5`**（见 §4.6）；三者 **定义不同，禁止混读**。
 
 ---
 
@@ -147,11 +158,13 @@ TAIRA 在本仓库已实现 **四域 × 各 3 seeds** 的 **指标落盘**（CSV
 
 JSON 中的 **`main_table_interrec_paradigm`**：**`SR@5=SR@10=SR@15=HR@10`（均由 LLM 评估）**，`AvgT=1`，`hDCG=NDCG@10`。这是 **版面/对照用约定**，不是 MCMIPL 原版多轮 hDCG。若 InterRec 报的是 **累积多轮成功**，不能与上式 **不加说明**等价。
 
-### 4.3 `not available`（仓库未记录）
+### 4.3 汇总 CSV 未单列存档的指标
 
 | 指标类 | 状态 |
 |--------|------|
-| `HitRate@1`、`HitRate@5`、`Recall@5`、`NDCG@5`、`MRR@5`、Recall/NDCG/MRR@20 | **未单独报告** |
+| `HitRate@1`、`HitRate@5`（单列）、`MRR@5` | **`taira_results.csv` 未报告** |
+| **`Recall@5`、`NDCG@5`（自 `relevance_scores`）** | **未写入汇总 CSV**，但可对 **`results/checkpoints/.../log_{i+1}.log`** 按 §0 / §4.6 **离线重算**（检查点目录默认 **不进 Git**。） |
+| Recall/NDCG/MRR@20 | **未报告** |
 | `preference_error` | **无** → 需在 evaluator 补 |
 | Interaction：`ask_rate`、`zero_ask_rate`（CRS 意义） | **不适用或等价退化** |
 | Cost：`wall_time_*`、LLM HTTP、tokens | **`not available`** |
@@ -187,7 +200,29 @@ JSON 中的 **`main_table_interrec_paradigm`**：**`SR@5=SR@10=SR@15=HR@10`（�
 | movielens | 0.7204±0.0165 | 0.4774±0.0026 | 0.6117±0.0134 | 0.7024±0.0106 | 0.2796±0.0165 | 0.0302±0.0025 | 0.4774±0.0026 |
 | yelp | 0.4336±0.0116 | 0.2956±0.0081 | 0.3661±0.0105 | 0.4202±0.0149 | 0.5664±0.0116 | 0.0034±0.0042 | 0.2956±0.0081 |
 
----
+### 4.6 LastFM / MovieLens / Yelp：`Recall@5` 与 `NDCG@5`（检查点日志重算）
+
+**对齐方式：** `result-TAIRA.csv` 的第 `i` 条数据行（去掉表尾均值行）对应同目录 **`log_{i+1}.log`**（见 `TAIRA/main_resume.py` 写入逻辑）。
+
+**Recall@5：** 解析 log 内 **最后一次** `"relevance_scores": [..., 长度 10]`；若 \(\max(\text{scores}_{1..5}) \ge 1.0\) 则该 query 为 **1** 否则 **0**。**log 不存在或字段缺失 → 记 0。**
+
+**NDCG@5：** 对上述 10 维向量，仅用 **排序位置 1–5** 的相关性取值，DCG / IDCG 与 `calculate_ndcg(..., p=5)` **同形**（IDCG 为将 **整表 10 个相关分**全局排序后的理想前五折扣和）。**缺失 → 0。**
+
+对每个 **seed**，先在 **全体 query** 上取均值，再对 **seed 0–2** 的 seed 均值再取 **mean ± std**：
+
+| dataset | Recall@5 ↑ mean ± std | NDCG@5 ↑ mean ± std |
+|---------|----------------------|---------------------|
+| lastfm | **0.7814 ± 0.0049** | **0.7128 ± 0.0068** |
+| movielens | **0.5038 ± 0.0067** | **0.4297 ± 0.0177** |
+| yelp | **0.3625 ± 0.0144** | **0.3037 ± 0.0082** |
+
+**SR@5（桥）**与 §4.5 及 §0：**`SR@5 := SR@10 := HR@10`**（仍为 LLM **`hit_rate` 聚合语义**），**勿与上表 Recall@5 混读。**
+
+复算命令（需本地存在 `results/checkpoints/`）：
+
+```bash
+python3 scripts/compute_taira_recall_ndcg_at5.py lastfm movielens yelp
+```
 
 ## 5. 与 InterRec / frontier_clustered_v3 的 Setting 对齐
 
@@ -302,6 +337,7 @@ JSON 中的 **`main_table_interrec_paradigm`**：**`SR@5=SR@10=SR@15=HR@10`（�
 | 无 token/latency | LLM client 钩子写 metrics |
 | 无 `preference_error` | evaluator 增偏好向量距离 |
 | 无 paired bootstrap | A/B **同 seed** 配对重采样 |
+| Recall@5 / NDCG@5 未进 `taira_results.csv` | 本地有 `results/checkpoints/` 时运行 `python3 scripts/compute_taira_recall_ndcg_at5.py`，或在 evaluator 中直接落盘 |
 
 **Next：** (1) 提供 `frontier_clustered_v32` run；(2) 主表选定 **LLM vs ID** 主列；(3) 多轮叙事时补 **Round-1-only** InterRec 子表或扩充 TAIRA（工程大）。
 
@@ -311,19 +347,21 @@ JSON 中的 **`main_table_interrec_paradigm`**：**`SR@5=SR@10=SR@15=HR@10`（�
 
 1. **跑完：** 四域 ×3 seed **CSV/JSON 齐全**；**无**标准化 `run_summary`/`full_log.jsonl`。  
 2. **管线 SR：** Amazon ~91%，LastFM ~92%，MovieLens ~72%，Yelp ~43%（与高 fail 共存）。  
-3. **核心 LLM-hit（HR@10）：** Amazon ~67%，LastFM ~72%，MovieLens ~48%，Yelp ~30%。  
-4. **NDCG@10/MRR@10：** 见 §4.5 / §4.4。  
-5. **Ask：** **0**（CRS）；**AvgT=1**。  
-6. **成本账本：** **`not available`**。  
-7. **同 setting InterRec：** **无法证实**（缺 v3 run）。  
-8. **主要不一致：** 多轮 CRS vs **单轮**；**SR@K 语义**；**LLM-hit vs ID-hit**。  
-9. **方法：** **多 Agent + BM25 + 单次 Top-K**。  
-10. **vs InterRec 最大差别：** **无 belief/VOI/frontier question**。  
-11. **最低目标：** §8-A（相对表中 mean）。  
-12. **Paper-ready：** §8-B + paired 统计 + 脚注闭合。  
-13. **是否要补 TAIRA：** 建议至少 **会话 manifest ≤500** 与 **uniq id**脚注；不一定要全量重训。  
-14. **可否直接对比：** **`partially comparable`**， headline 需谨慎。  
-15. **主报告：** **本文档路径** `/home/yrh666/interrecbaseline-TAIRA/experiments/baseline_final_comparison/TAIRA/TAIRA_FINAL_REPORT.md`
+3. **核心 LLM-hit（HR@10，亦作桥接 SR@10）：** Amazon ~67%，LastFM ~72%，MovieLens ~48%，Yelp ~30%；**SR@5 桥**与其 **数值相同**。  
+4. **`Recall@5` / `NDCG@5`（LastFM/Movielens/Yelp）：** 见 §0 / §4.6 **log 重算**（与 **HR@10** **不同定义**）。
+5. **NDCG@10/MRR@10：** 见 §4.5 / §4.4。  
+6. **Ask：** **0**（CRS）；**AvgT=1**。  
+7. **成本账本：** **`not available`**。  
+8. **同 setting InterRec：** **无法证实**（缺 v3 run）。  
+9. **主要不一致：** 多轮 CRS vs **单轮**；**SR@K 语义**；**LLM-hit vs ID-hit**。  
+10. **方法：** **多 Agent + BM25 + 单次 Top-K**。  
+11. **vs InterRec 最大差别：** **无 belief/VOI/frontier question**。  
+12. **最低目标：** §8-A（相对表中 mean）。  
+13. **Paper-ready：** §8-B + paired 统计 + 脚注闭合。  
+14. **`paper_ready_against_this_baseline`：** **`not_ready`**（缺对齐 InterRec 跑分）。  
+15. **是否要补 TAIRA：** 建议至少 **会话 manifest ≤500** 与 **uniq id**脚注；不一定要全量重训。  
+16. **可否直接对比：** **`partially comparable`**， headline 需谨慎。  
+17. **主报告路径：** `/home/yrh666/interrecbaseline-TAIRA/experiments/baseline_final_comparison/TAIRA/TAIRA_FINAL_REPORT.md`
 
 ---
 
