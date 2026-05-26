@@ -1,515 +1,508 @@
-Configuration: {'QUERY_NUMBER': 500, 'TOPN_ITEMS': 500, 'TOPK_ITEMS': 10, 'DOMAIN': 'lastfm', 'MODEL': 'deepseek-chat', 'METHOD': 'TAIRA', 'OPENAI_BASE_URL': 'https://api.deepseek.com/v1', 'OPENAI_API_KEY': 'sk-dfb671f293d440dbad659e3820a9ef9f', 'GOOGLE_API_KEY': '', 'GOOGLE_CSE_ID': '', 'ENABLE_LEARNING': False}
-Building BM25 index for 2665 items...
-BM25 index ready.
-Processing query 1
-Processing query 2
-Processing query 3
-Processing query 4
-Processing query 5
-Processing query 6
-Processing query 7
-Processing query 8
-Processing query 9
-Processing query 10
-Processing query 11
-Processing query 12
-Processing query 13
-Processing query 14
-Processing query 15
-Processing query 16
-Processing query 17
-Processing query 18
-Processing query 19
-Processing query 20
-Error processing query 20: Invalid \escape: line 14 column 45 (char 1970)
-Processing query 21
-Processing query 22
-Processing query 23
-Processing query 24
-Processing query 25
-Processing query 26
-Processing query 27
-Processing query 28
-Processing query 29
-Processing query 30
-Error processing query 30: Invalid \escape: line 10 column 45 (char 1107)
-Processing query 31
-Processing query 32
-Processing query 33
-Processing query 34
-Processing query 35
-Processing query 36
-Processing query 37
-Processing query 38
-Error processing query 38: Invalid \escape: line 11 column 45 (char 1317)
-Processing query 39
-Processing query 40
-Processing query 41
-Processing query 42
-Processing query 43
-Processing query 44
-Processing query 45
-Processing query 46
-Processing query 47
-Processing query 48
-Processing query 49
-Processing query 50
-Processing query 51
-Processing query 52
-Processing query 53
-Processing query 54
-Processing query 55
-Processing query 56
-Error processing query 56: Invalid \escape: line 7 column 43 (char 293)
-Processing query 57
-Processing query 58
-Processing query 59
-Processing query 60
-Processing query 61
-Processing query 62
-Processing query 63
-Processing query 64
-Processing query 65
-Processing query 66
-Processing query 67
-Processing query 68
-Processing query 69
-Processing query 70
-Error processing query 70: Invalid \escape: line 12 column 47 (char 1403)
-Processing query 71
-Processing query 72
-Processing query 73
-Processing query 74
-Processing query 75
-Processing query 76
-Processing query 77
-Processing query 78
-Processing query 79
-Processing query 80
-Processing query 81
-Processing query 82
-Processing query 83
-Processing query 84
-Processing query 85
-Processing query 86
-Processing query 87
-Processing query 88
-Processing query 89
-Processing query 90
-Processing query 91
-Processing query 92
-Processing query 93
-Processing query 94
-Processing query 95
-Processing query 96
-Processing query 97
-Processing query 98
-Processing query 99
-Processing query 100
-Processing query 101
-Processing query 102
-Processing query 103
-Processing query 104
-Processing query 105
-Processing query 106
-Processing query 107
-Processing query 108
-Processing query 109
-Processing query 110
-Processing query 111
-Processing query 112
-Processing query 113
-Processing query 114
-Processing query 115
-Processing query 116
-Processing query 117
-Processing query 118
-Processing query 119
-Processing query 120
-Processing query 121
-Processing query 122
-Processing query 123
-Processing query 124
-Processing query 125
-Processing query 126
-Processing query 127
-Processing query 128
-Processing query 129
-Processing query 130
-Processing query 131
-Processing query 132
-Processing query 133
-Processing query 134
-Processing query 135
-Processing query 136
-Processing query 137
-Processing query 138
-Processing query 139
-Processing query 140
-Processing query 141
-Processing query 142
-Processing query 143
-Processing query 144
-Processing query 145
-Processing query 146
-Processing query 147
-Processing query 148
-Processing query 149
-Processing query 150
-Processing query 151
-Processing query 152
-Processing query 153
-Processing query 154
-Processing query 155
-Processing query 156
-Processing query 157
-Processing query 158
-Processing query 159
-Processing query 160
-Processing query 161
-Processing query 162
-Processing query 163
-Processing query 164
-Processing query 165
-Processing query 166
-Error processing query 166: Invalid \escape: line 9 column 45 (char 867)
-Processing query 167
-Processing query 168
-Processing query 169
-Processing query 170
-Processing query 171
-Processing query 172
-Processing query 173
-Processing query 174
-Processing query 175
-Processing query 176
-Processing query 177
-Processing query 178
-Processing query 179
-Processing query 180
-Processing query 181
-Processing query 182
-Processing query 183
-Processing query 184
-Processing query 185
-Processing query 186
-Processing query 187
-Processing query 188
-Processing query 189
-Processing query 190
-Processing query 191
-Processing query 192
-Processing query 193
-Processing query 194
-Processing query 195
-Processing query 196
-Processing query 197
-Processing query 198
-Processing query 199
-Processing query 200
-Processing query 201
-Processing query 202
-Processing query 203
-Processing query 204
-Processing query 205
-Processing query 206
-Processing query 207
-Processing query 208
-Processing query 209
-Processing query 210
-Processing query 211
-Processing query 212
-Processing query 213
-Processing query 214
-Processing query 215
-Processing query 216
-Processing query 217
-Processing query 218
-Processing query 219
-Processing query 220
-Processing query 221
-Processing query 222
-Processing query 223
-Processing query 224
-Processing query 225
-Processing query 226
-Processing query 227
-Processing query 228
-Processing query 229
-Processing query 230
-Processing query 231
-Processing query 232
-Processing query 233
-Error processing query 233: Invalid \escape: line 12 column 45 (char 1439)
-Processing query 234
-Processing query 235
-Processing query 236
-Processing query 237
-Processing query 238
-Processing query 239
-Processing query 240
-Processing query 241
-Processing query 242
-Processing query 243
-Processing query 244
-Processing query 245
-Processing query 246
-Processing query 247
-Processing query 248
-Processing query 249
-Processing query 250
-Processing query 251
-Processing query 252
-Processing query 253
-Processing query 254
-Processing query 255
-Processing query 256
-Processing query 257
-Processing query 258
-Processing query 259
-Processing query 260
-Processing query 261
-Processing query 262
-Processing query 263
-Processing query 264
-Processing query 265
-Processing query 266
-Processing query 267
-Processing query 268
-Processing query 269
-Processing query 270
-Error processing query 270: Invalid \escape: line 14 column 47 (char 1961)
-Processing query 271
-Processing query 272
-Processing query 273
-Processing query 274
-Processing query 275
-Processing query 276
-Processing query 277
-Processing query 278
-Processing query 279
-Processing query 280
-Processing query 281
-Processing query 282
-Processing query 283
-Processing query 284
-Processing query 285
-Processing query 286
-Processing query 287
-Processing query 288
-Processing query 289
-Processing query 290
-Processing query 291
-Processing query 292
-Processing query 293
-Processing query 294
-Processing query 295
-Processing query 296
-Processing query 297
-Processing query 298
-Processing query 299
-Processing query 300
-Processing query 301
-Processing query 302
-Processing query 303
-Processing query 304
-Processing query 305
-Processing query 306
-Processing query 307
-Processing query 308
-Processing query 309
-Processing query 310
-Processing query 311
-Processing query 312
-Processing query 313
-Processing query 314
-Processing query 315
-Error processing query 315: Invalid \escape: line 14 column 46 (char 1888)
-Processing query 316
-Processing query 317
-Processing query 318
-Processing query 319
-Processing query 320
-Processing query 321
-Error processing query 321: Invalid \escape: line 15 column 45 (char 2285)
-Processing query 322
-Processing query 323
-Processing query 324
-Processing query 325
-Processing query 326
-Processing query 327
-Processing query 328
-Processing query 329
-Processing query 330
-Processing query 331
-Processing query 332
-Processing query 333
-Processing query 334
-Processing query 335
-Processing query 336
-Processing query 337
-Processing query 338
-Processing query 339
-Processing query 340
-Processing query 341
-Processing query 342
-Processing query 343
-Processing query 344
-Processing query 345
-Processing query 346
-Processing query 347
-Processing query 348
-Processing query 349
-Processing query 350
-Processing query 351
-Processing query 352
-Processing query 353
-Processing query 354
-Processing query 355
-Processing query 356
-Processing query 357
-Processing query 358
-Processing query 359
-Processing query 360
-Processing query 361
-Processing query 362
-Processing query 363
-Processing query 364
-Processing query 365
-Processing query 366
-Processing query 367
-Processing query 368
-Processing query 369
-Processing query 370
-Processing query 371
-Processing query 372
-Processing query 373
-Processing query 374
-Processing query 375
-Processing query 376
-Processing query 377
-Processing query 378
-Processing query 379
-Processing query 380
-Processing query 381
-Processing query 382
-Processing query 383
-Processing query 384
-Processing query 385
-Processing query 386
-Processing query 387
-Processing query 388
-Processing query 389
-Processing query 390
-Processing query 391
-Processing query 392
-Processing query 393
-Processing query 394
-Processing query 395
-Processing query 396
-Processing query 397
-Processing query 398
-Processing query 399
-Processing query 400
-Processing query 401
-Processing query 402
-Processing query 403
-Processing query 404
-Processing query 405
-Processing query 406
-Processing query 407
-Processing query 408
-Processing query 409
-Processing query 410
-Processing query 411
-Processing query 412
-Processing query 413
-Processing query 414
-Processing query 415
-Processing query 416
-Processing query 417
-Processing query 418
-Processing query 419
-Processing query 420
-Processing query 421
-Processing query 422
-Processing query 423
-Processing query 424
-Processing query 425
-Processing query 426
-Processing query 427
-Processing query 428
-Processing query 429
-Processing query 430
-Processing query 431
-Processing query 432
-Processing query 433
-Processing query 434
-Processing query 435
-Processing query 436
-Processing query 437
-Processing query 438
-Processing query 439
-Processing query 440
-Processing query 441
-Processing query 442
-Processing query 443
-Processing query 444
-Processing query 445
-Processing query 446
-Processing query 447
-Processing query 448
-Processing query 449
-Processing query 450
-Processing query 451
-Processing query 452
-Processing query 453
-Processing query 454
-Processing query 455
-Processing query 456
-Processing query 457
-Processing query 458
-Processing query 459
-Processing query 460
-Processing query 461
-Processing query 462
-Processing query 463
-Processing query 464
-Processing query 465
-Processing query 466
-Processing query 467
-Processing query 468
-Processing query 469
-Processing query 470
-Processing query 471
-Processing query 472
-Processing query 473
-Processing query 474
-Processing query 475
-Processing query 476
-Processing query 477
-Processing query 478
-Processing query 479
-Processing query 480
-Processing query 481
-Processing query 482
-Processing query 483
-Processing query 484
-Processing query 485
-Processing query 486
-Processing query 487
-Processing query 488
-Processing query 489
-Processing query 490
-Processing query 491
-Processing query 492
-Processing query 493
-Processing query 494
-Processing query 495
-Processing query 496
-Error processing query 496: Invalid \escape: line 12 column 43 (char 1451)
-Processing query 497
-Processing query 498
-Processing query 499
-Processing query 500
-Results saved to data/lastfm/logs/TAIRA-2026-05-09 10_37_52/result-TAIRA-2026-05-09 10_37_52.csv
+Configuration: {'QUERY_NUMBER': 500, 'TOPN_ITEMS': 500, 'TOPK_ITEMS': 10, 'DOMAIN': 'lastfm', 'MODEL': 'deepseek-chat', 'METHOD': 'TAIRA', 'OPENAI_BASE_URL': 'https://api.deepseek.com/v1', 'BGE_M3_MODEL': 'BAAI/bge-m3', 'BGE_RERANKER_MODEL': 'BAAI/bge-reranker-base', 'ITEM_RETRIEVAL_RANKING_BACKEND': 'bm25', 'BM25_FALLBACK_TO_BGE': False, 'BM25_FALLBACK_MIN_SCORE': 0.0, 'ENABLE_LEARNING': False}
+Resuming from /home/yrh666/interrecbaseline-TAIRA/results/checkpoints/lastfm/seed_0/result-TAIRA.csv: 427 queries already done, skipping them.
+Results CSV: /home/yrh666/interrecbaseline-TAIRA/results/checkpoints/lastfm/seed_0/result-TAIRA.csv
+Total queries to run: 73 / 500
+  Skipping query 1 (id=208, already done)
+  Skipping query 2 (id=2608, already done)
+  Skipping query 3 (id=3739, already done)
+  Skipping query 4 (id=3498, already done)
+  Skipping query 5 (id=55, already done)
+  Skipping query 6 (id=5048, already done)
+  Skipping query 7 (id=1775, already done)
+  Skipping query 8 (id=7152, already done)
+  Skipping query 9 (id=1048, already done)
+  Skipping query 10 (id=830, already done)
+  Skipping query 11 (id=5841, already done)
+  Skipping query 12 (id=5308, already done)
+  Skipping query 13 (id=3058, already done)
+  Skipping query 14 (id=5480, already done)
+  Skipping query 15 (id=6836, already done)
+  Skipping query 16 (id=3397, already done)
+  Skipping query 17 (id=3717, already done)
+  Skipping query 18 (id=5027, already done)
+  Skipping query 19 (id=2641, already done)
+  Skipping query 20 (id=707, already done)
+  Skipping query 21 (id=1372, already done)
+  Skipping query 22 (id=5000, already done)
+  Skipping query 23 (id=3391, already done)
+  Skipping query 24 (id=7639, already done)
+  Skipping query 25 (id=2342, already done)
+  Skipping query 26 (id=1797, already done)
+  Skipping query 27 (id=3490, already done)
+  Skipping query 28 (id=4437, already done)
+  Skipping query 29 (id=1892, already done)
+  Skipping query 30 (id=1713, already done)
+  Skipping query 31 (id=2901, already done)
+  Skipping query 32 (id=3795, already done)
+  Skipping query 33 (id=2094, already done)
+  Skipping query 34 (id=6205, already done)
+  Skipping query 35 (id=429, already done)
+  Skipping query 36 (id=6959, already done)
+  Skipping query 37 (id=68, already done)
+  Skipping query 38 (id=5947, already done)
+  Skipping query 39 (id=1412, already done)
+  Skipping query 40 (id=4457, already done)
+  Skipping query 41 (id=2956, already done)
+  Skipping query 42 (id=3739, already done)
+  Skipping query 43 (id=2281, already done)
+  Skipping query 44 (id=2548, already done)
+  Skipping query 45 (id=1534, already done)
+  Skipping query 46 (id=2676, already done)
+  Skipping query 47 (id=2402, already done)
+  Skipping query 48 (id=198, already done)
+  Skipping query 49 (id=1513, already done)
+  Skipping query 50 (id=2130, already done)
+  Skipping query 51 (id=4716, already done)
+  Skipping query 52 (id=371, already done)
+  Skipping query 53 (id=2523, already done)
+  Skipping query 54 (id=2019, already done)
+  Skipping query 55 (id=3393, already done)
+  Skipping query 56 (id=5966, already done)
+  Skipping query 57 (id=917, already done)
+  Skipping query 58 (id=4316, already done)
+  Skipping query 59 (id=3902, already done)
+  Skipping query 60 (id=2463, already done)
+  Skipping query 61 (id=1609, already done)
+  Skipping query 62 (id=5416, already done)
+  Skipping query 63 (id=4822, already done)
+  Skipping query 64 (id=4850, already done)
+  Skipping query 65 (id=2742, already done)
+  Skipping query 66 (id=6132, already done)
+  Skipping query 67 (id=1042, already done)
+  Skipping query 68 (id=2801, already done)
+  Skipping query 69 (id=610, already done)
+  Skipping query 70 (id=1079, already done)
+  Skipping query 71 (id=5149, already done)
+  Skipping query 72 (id=4165, already done)
+  Skipping query 73 (id=5100, already done)
+  Skipping query 74 (id=301, already done)
+  Skipping query 75 (id=1515, already done)
+  Skipping query 76 (id=2083, already done)
+  Skipping query 77 (id=3489, already done)
+  Skipping query 78 (id=64, already done)
+  Skipping query 79 (id=8264, already done)
+  Skipping query 80 (id=2629, already done)
+  Skipping query 81 (id=4649, already done)
+  Skipping query 82 (id=1185, already done)
+  Skipping query 83 (id=1069, already done)
+  Skipping query 84 (id=735, already done)
+  Skipping query 85 (id=291, already done)
+  Skipping query 86 (id=1383, already done)
+  Skipping query 87 (id=7100, already done)
+  Skipping query 88 (id=4444, already done)
+  Skipping query 89 (id=9234, already done)
+  Skipping query 90 (id=53, already done)
+  Skipping query 91 (id=2031, already done)
+  Skipping query 92 (id=230, already done)
+  Skipping query 93 (id=265, already done)
+  Skipping query 94 (id=615, already done)
+  Skipping query 95 (id=2677, already done)
+  Skipping query 96 (id=4732, already done)
+  Skipping query 97 (id=359, already done)
+  Skipping query 98 (id=913, already done)
+  Skipping query 99 (id=1772, already done)
+  Skipping query 100 (id=7639, already done)
+  Skipping query 101 (id=972, already done)
+  Skipping query 102 (id=207, already done)
+  Skipping query 103 (id=920, already done)
+  Skipping query 104 (id=5950, already done)
+  Skipping query 105 (id=2150, already done)
+  Skipping query 106 (id=4696, already done)
+  Skipping query 107 (id=2137, already done)
+  Skipping query 108 (id=4225, already done)
+  Skipping query 109 (id=4920, already done)
+  Skipping query 110 (id=4566, already done)
+  Skipping query 111 (id=5953, already done)
+  Skipping query 112 (id=686, already done)
+  Skipping query 113 (id=3244, already done)
+  Skipping query 114 (id=1672, already done)
+  Skipping query 115 (id=302, already done)
+  Skipping query 116 (id=2842, already done)
+  Skipping query 117 (id=3890, already done)
+  Skipping query 118 (id=1475, already done)
+  Skipping query 119 (id=3756, already done)
+  Skipping query 120 (id=3747, already done)
+  Skipping query 121 (id=3871, already done)
+  Skipping query 122 (id=1868, already done)
+  Skipping query 123 (id=3322, already done)
+  Skipping query 124 (id=295, already done)
+  Skipping query 125 (id=3417, already done)
+  Skipping query 126 (id=2094, already done)
+  Skipping query 127 (id=2859, already done)
+  Skipping query 128 (id=6409, already done)
+  Skipping query 129 (id=3375, already done)
+  Skipping query 130 (id=2801, already done)
+  Skipping query 131 (id=3378, already done)
+  Skipping query 132 (id=2975, already done)
+  Skipping query 133 (id=4126, already done)
+  Skipping query 134 (id=868, already done)
+  Skipping query 135 (id=461, already done)
+  Skipping query 136 (id=4170, already done)
+  Skipping query 137 (id=4444, already done)
+  Skipping query 138 (id=3673, already done)
+  Skipping query 139 (id=407, already done)
+  Skipping query 140 (id=8350, already done)
+  Skipping query 141 (id=6461, already done)
+  Skipping query 142 (id=3563, already done)
+  Skipping query 143 (id=2923, already done)
+  Skipping query 144 (id=1180, already done)
+  Skipping query 145 (id=2936, already done)
+  Skipping query 146 (id=93, already done)
+  Skipping query 147 (id=220, already done)
+  Skipping query 148 (id=999, already done)
+  Skipping query 149 (id=4773, already done)
+  Skipping query 150 (id=3063, already done)
+  Skipping query 151 (id=2044, already done)
+  Skipping query 152 (id=6075, already done)
+  Skipping query 153 (id=1808, already done)
+  Skipping query 154 (id=5666, already done)
+  Skipping query 155 (id=4474, already done)
+  Skipping query 156 (id=3462, already done)
+  Skipping query 157 (id=1406, already done)
+  Skipping query 158 (id=3316, already done)
+  Skipping query 159 (id=3893, already done)
+  Skipping query 160 (id=769, already done)
+  Skipping query 161 (id=4831, already done)
+  Skipping query 162 (id=3557, already done)
+  Skipping query 163 (id=690, already done)
+  Skipping query 164 (id=5754, already done)
+  Skipping query 165 (id=6409, already done)
+  Skipping query 166 (id=6453, already done)
+  Skipping query 167 (id=89, already done)
+  Skipping query 168 (id=923, already done)
+  Skipping query 169 (id=689, already done)
+  Skipping query 170 (id=1380, already done)
+  Skipping query 171 (id=51, already done)
+  Skipping query 172 (id=9285, already done)
+  Skipping query 173 (id=453, already done)
+  Skipping query 174 (id=3397, already done)
+  Skipping query 175 (id=298, already done)
+  Skipping query 176 (id=3934, already done)
+  Skipping query 177 (id=503, already done)
+  Skipping query 178 (id=2982, already done)
+  Skipping query 179 (id=1772, already done)
+  Skipping query 180 (id=1686, already done)
+  Skipping query 181 (id=5434, already done)
+  Skipping query 182 (id=2343, already done)
+  Skipping query 183 (id=3892, already done)
+  Skipping query 184 (id=994, already done)
+  Skipping query 185 (id=2986, already done)
+  Skipping query 186 (id=2556, already done)
+  Skipping query 187 (id=4308, already done)
+  Skipping query 188 (id=65, already done)
+  Skipping query 189 (id=2062, already done)
+  Skipping query 190 (id=355, already done)
+  Skipping query 191 (id=4255, already done)
+  Skipping query 192 (id=9485, already done)
+  Skipping query 193 (id=8674, already done)
+  Skipping query 194 (id=5150, already done)
+  Skipping query 195 (id=1081, already done)
+  Skipping query 196 (id=7525, already done)
+  Skipping query 197 (id=580, already done)
+  Skipping query 198 (id=1713, already done)
+  Skipping query 199 (id=3503, already done)
+  Skipping query 200 (id=6830, already done)
+  Skipping query 201 (id=5239, already done)
+  Skipping query 202 (id=779, already done)
+  Skipping query 203 (id=157, already done)
+  Skipping query 204 (id=441, already done)
+  Skipping query 205 (id=11084, already done)
+  Skipping query 206 (id=8002, already done)
+  Skipping query 207 (id=72, already done)
+  Skipping query 208 (id=6618, already done)
+  Skipping query 209 (id=329, already done)
+  Skipping query 210 (id=5237, already done)
+  Skipping query 211 (id=81, already done)
+  Skipping query 212 (id=3053, already done)
+  Skipping query 213 (id=6759, already done)
+  Skipping query 214 (id=3470, already done)
+  Skipping query 215 (id=2352, already done)
+  Skipping query 216 (id=2587, already done)
+  Skipping query 217 (id=1193, already done)
+  Skipping query 218 (id=7096, already done)
+  Skipping query 219 (id=289, already done)
+  Skipping query 220 (id=2988, already done)
+  Skipping query 221 (id=2493, already done)
+  Skipping query 222 (id=3070, already done)
+  Skipping query 223 (id=329, already done)
+  Skipping query 224 (id=6210, already done)
+  Skipping query 225 (id=6294, already done)
+  Skipping query 226 (id=863, already done)
+  Skipping query 227 (id=501, already done)
+  Skipping query 228 (id=3078, already done)
+  Skipping query 229 (id=5414, already done)
+  Skipping query 230 (id=7448, already done)
+  Skipping query 231 (id=3308, already done)
+  Skipping query 232 (id=5547, already done)
+  Skipping query 233 (id=1041, already done)
+  Skipping query 234 (id=965, already done)
+  Skipping query 235 (id=6247, already done)
+  Skipping query 236 (id=1673, already done)
+  Skipping query 237 (id=9, already done)
+  Skipping query 238 (id=2864, already done)
+  Skipping query 239 (id=425, already done)
+  Skipping query 240 (id=190, already done)
+  Skipping query 241 (id=1455, already done)
+  Skipping query 242 (id=763, already done)
+  Skipping query 243 (id=3105, already done)
+  Skipping query 244 (id=961, already done)
+  Skipping query 245 (id=3946, already done)
+  Skipping query 246 (id=3300, already done)
+  Skipping query 247 (id=307, already done)
+  Skipping query 248 (id=2669, already done)
+  Skipping query 249 (id=7071, already done)
+  Skipping query 250 (id=6289, already done)
+  Skipping query 251 (id=3749, already done)
+  Skipping query 252 (id=6409, already done)
+  Skipping query 253 (id=1971, already done)
+  Skipping query 254 (id=2552, already done)
+  Skipping query 255 (id=4704, already done)
+  Skipping query 256 (id=2959, already done)
+  Skipping query 257 (id=209, already done)
+  Skipping query 258 (id=5310, already done)
+  Skipping query 259 (id=2966, already done)
+  Skipping query 260 (id=7868, already done)
+  Skipping query 261 (id=2544, already done)
+  Skipping query 262 (id=548, already done)
+  Skipping query 263 (id=2094, already done)
+  Skipping query 264 (id=2523, already done)
+  Skipping query 265 (id=3206, already done)
+  Skipping query 266 (id=8155, already done)
+  Skipping query 267 (id=1957, already done)
+  Skipping query 268 (id=4562, already done)
+  Skipping query 269 (id=1934, already done)
+  Skipping query 270 (id=257, already done)
+  Skipping query 271 (id=5549, already done)
+  Skipping query 272 (id=2834, already done)
+  Skipping query 273 (id=4572, already done)
+  Skipping query 274 (id=2940, already done)
+  Skipping query 275 (id=7665, already done)
+  Skipping query 276 (id=89, already done)
+  Skipping query 277 (id=3741, already done)
+  Skipping query 278 (id=1513, already done)
+  Skipping query 279 (id=2094, already done)
+  Skipping query 280 (id=207, already done)
+  Skipping query 281 (id=188, already done)
+  Skipping query 282 (id=537, already done)
+  Skipping query 283 (id=2469, already done)
+  Skipping query 284 (id=11598, already done)
+  Skipping query 285 (id=1429, already done)
+  Skipping query 286 (id=6046, already done)
+  Skipping query 287 (id=3575, already done)
+  Skipping query 288 (id=6202, already done)
+  Skipping query 289 (id=1222, already done)
+  Skipping query 290 (id=72, already done)
+  Skipping query 291 (id=298, already done)
+  Skipping query 292 (id=424, already done)
+  Skipping query 293 (id=2094, already done)
+  Skipping query 294 (id=2493, already done)
+  Skipping query 295 (id=1415, already done)
+  Skipping query 296 (id=1703, already done)
+  Skipping query 297 (id=3444, already done)
+  Skipping query 298 (id=2619, already done)
+  Skipping query 299 (id=3489, already done)
+  Skipping query 300 (id=377, already done)
+  Skipping query 301 (id=3196, already done)
+  Skipping query 302 (id=1350, already done)
+  Skipping query 303 (id=4814, already done)
+  Skipping query 304 (id=5105, already done)
+  Skipping query 305 (id=4550, already done)
+  Skipping query 306 (id=5147, already done)
+  Skipping query 307 (id=5925, already done)
+  Skipping query 308 (id=2094, already done)
+  Skipping query 309 (id=2014, already done)
+  Skipping query 310 (id=294, already done)
+  Skipping query 311 (id=6298, already done)
+  Skipping query 312 (id=2343, already done)
+  Skipping query 313 (id=518, already done)
+  Skipping query 314 (id=2864, already done)
+  Skipping query 315 (id=1451, already done)
+  Skipping query 316 (id=546, already done)
+  Skipping query 317 (id=10969, already done)
+  Skipping query 318 (id=1672, already done)
+  Skipping query 319 (id=4562, already done)
+  Skipping query 320 (id=298, already done)
+  Skipping query 321 (id=190, already done)
+  Skipping query 322 (id=9187, already done)
+  Skipping query 323 (id=4428, already done)
+  Skipping query 324 (id=6906, already done)
+  Skipping query 325 (id=4262, already done)
+  Skipping query 326 (id=7724, already done)
+  Skipping query 327 (id=4779, already done)
+  Skipping query 328 (id=2801, already done)
+  Skipping query 329 (id=1188, already done)
+  Skipping query 330 (id=6132, already done)
+  Skipping query 331 (id=2930, already done)
+  Skipping query 332 (id=3206, already done)
+  Skipping query 333 (id=2544, already done)
+  Skipping query 334 (id=2546, already done)
+  Skipping query 335 (id=6594, already done)
+  Skipping query 336 (id=5149, already done)
+  Skipping query 337 (id=1400, already done)
+  Skipping query 338 (id=3239, already done)
+  Skipping query 339 (id=2855, already done)
+  Skipping query 340 (id=1400, already done)
+  Skipping query 341 (id=5150, already done)
+  Skipping query 342 (id=1660, already done)
+  Skipping query 343 (id=1453, already done)
+  Skipping query 344 (id=424, already done)
+  Skipping query 345 (id=13292, already done)
+  Skipping query 346 (id=1426, already done)
+  Skipping query 347 (id=768, already done)
+  Skipping query 348 (id=4079, already done)
+  Skipping query 349 (id=211, already done)
+  Skipping query 350 (id=3714, already done)
+  Skipping query 351 (id=4444, already done)
+  Skipping query 352 (id=2444, already done)
+  Skipping query 353 (id=6217, already done)
+  Skipping query 354 (id=3302, already done)
+  Skipping query 355 (id=1377, already done)
+  Skipping query 356 (id=5547, already done)
+  Skipping query 357 (id=228, already done)
+  Skipping query 358 (id=6614, already done)
+  Skipping query 359 (id=3859, already done)
+  Skipping query 360 (id=3294, already done)
+  Skipping query 361 (id=4819, already done)
+  Skipping query 362 (id=6730, already done)
+  Skipping query 363 (id=4074, already done)
+  Skipping query 364 (id=4817, already done)
+  Skipping query 365 (id=225, already done)
+  Skipping query 366 (id=8589, already done)
+  Skipping query 367 (id=2459, already done)
+  Skipping query 368 (id=714, already done)
+  Skipping query 369 (id=2094, already done)
+  Skipping query 370 (id=3308, already done)
+  Skipping query 371 (id=5925, already done)
+  Skipping query 372 (id=2044, already done)
+  Skipping query 373 (id=6232, already done)
+  Skipping query 374 (id=1936, already done)
+  Skipping query 375 (id=2019, already done)
+  Skipping query 376 (id=468, already done)
+  Skipping query 377 (id=2786, already done)
+  Skipping query 378 (id=6678, already done)
+  Skipping query 379 (id=157, already done)
+  Skipping query 380 (id=5547, already done)
+  Skipping query 381 (id=506, already done)
+  Skipping query 382 (id=4031, already done)
+  Skipping query 383 (id=498, already done)
+  Skipping query 384 (id=349, already done)
+  Skipping query 385 (id=2598, already done)
+  Skipping query 386 (id=3404, already done)
+  Skipping query 387 (id=4079, already done)
+  Skipping query 388 (id=3171, already done)
+  Skipping query 389 (id=6453, already done)
+  Skipping query 390 (id=4941, already done)
+  Skipping query 391 (id=5958, already done)
+  Skipping query 392 (id=4565, already done)
+  Skipping query 393 (id=877, already done)
+  Skipping query 394 (id=292, already done)
+  Skipping query 395 (id=6308, already done)
+  Skipping query 396 (id=2977, already done)
+  Skipping query 397 (id=333, already done)
+  Skipping query 398 (id=3310, already done)
+  Skipping query 399 (id=2106, already done)
+  Skipping query 400 (id=966, already done)
+  Skipping query 401 (id=295, already done)
+  Skipping query 402 (id=81, already done)
+  Skipping query 403 (id=291, already done)
+  Skipping query 404 (id=285, already done)
+  Skipping query 405 (id=8728, already done)
+  Skipping query 406 (id=2346, already done)
+  Skipping query 407 (id=906, already done)
+  Skipping query 408 (id=1155, already done)
+  Skipping query 409 (id=3741, already done)
+  Skipping query 410 (id=209, already done)
+  Skipping query 411 (id=691, already done)
+  Skipping query 412 (id=5927, already done)
+  Skipping query 413 (id=5216, already done)
+  Skipping query 414 (id=3317, already done)
+  Skipping query 415 (id=6690, already done)
+  Skipping query 416 (id=1540, already done)
+  Skipping query 417 (id=2653, already done)
+  Skipping query 418 (id=1090, already done)
+  Skipping query 419 (id=466, already done)
+  Skipping query 420 (id=3057, already done)
+  Skipping query 421 (id=2666, already done)
+  Skipping query 422 (id=3873, already done)
+  Skipping query 423 (id=536, already done)
+  Skipping query 424 (id=1338, already done)
+  Skipping query 425 (id=210, already done)
+  Skipping query 426 (id=5475, already done)
+  Skipping query 427 (id=8372, already done)
+  Skipping query 428 (id=1151, already done)
+  Skipping query 429 (id=1150, already done)
+  Skipping query 430 (id=622, already done)
+  Skipping query 431 (id=329, already done)
+  Skipping query 432 (id=389, already done)
+  Skipping query 433 (id=5074, already done)
+  Skipping query 434 (id=4316, already done)
+  Skipping query 435 (id=3200, already done)
+  Skipping query 436 (id=1793, already done)
+  Skipping query 437 (id=8656, already done)
+  Skipping query 438 (id=234, already done)
+  Skipping query 439 (id=230, already done)
+  Skipping query 440 (id=3386, already done)
+  Skipping query 441 (id=1459, already done)
+  Skipping query 442 (id=3300, already done)
+  Skipping query 443 (id=2469, already done)
+  Skipping query 444 (id=6713, already done)
+  Skipping query 445 (id=701, already done)
+  Skipping query 446 (id=301, already done)
+  Skipping query 447 (id=4079, already done)
+  Skipping query 448 (id=8155, already done)
+  Skipping query 449 (id=2839, already done)
+  Skipping query 450 (id=203, already done)
+  Skipping query 451 (id=1470, already done)
+  Skipping query 452 (id=2600, already done)
+  Skipping query 453 (id=4198, already done)
+  Skipping query 454 (id=321, already done)
+  Skipping query 455 (id=1517, already done)
+  Skipping query 456 (id=1456, already done)
+  Skipping query 457 (id=2006, already done)
+  Skipping query 458 (id=3444, already done)
+  Skipping query 459 (id=3173, already done)
+  Skipping query 460 (id=3488, already done)
+  Skipping query 461 (id=45, already done)
+  Skipping query 462 (id=4810, already done)
+  Skipping query 463 (id=2493, already done)
+  Skipping query 464 (id=5119, already done)
+  Skipping query 465 (id=2277, already done)
+  Skipping query 466 (id=499, already done)
+  Skipping query 467 (id=3428, already done)
+  Skipping query 468 (id=3769, already done)
+  Skipping query 469 (id=7885, already done)
+  Skipping query 470 (id=3481, already done)
+  Skipping query 471 (id=5079, already done)
+  Skipping query 472 (id=716, already done)
+  Skipping query 473 (id=1988, already done)
+  Skipping query 474 (id=5966, already done)
+  Skipping query 475 (id=4115, already done)
+  Skipping query 476 (id=866, already done)
+  Skipping query 477 (id=3244, already done)
+  Skipping query 478 (id=528, already done)
+  Skipping query 479 (id=4251, already done)
+  Skipping query 480 (id=3491, already done)
+  Skipping query 481 (id=3940, already done)
+  Skipping query 482 (id=1222, already done)
+  Skipping query 483 (id=1672, already done)
+  Skipping query 484 (id=2850, already done)
+  Skipping query 485 (id=3466, already done)
+  Skipping query 486 (id=3317, already done)
+  Skipping query 487 (id=220, already done)
+  Skipping query 488 (id=10717, already done)
+  Skipping query 489 (id=2020, already done)
+  Skipping query 490 (id=3030, already done)
+  Skipping query 491 (id=4435, already done)
+  Skipping query 492 (id=161, already done)
+  Skipping query 493 (id=230, already done)
+  Skipping query 494 (id=3481, already done)
+  Skipping query 495 (id=1098, already done)
+  Skipping query 496 (id=333, already done)
+  Skipping query 497 (id=716, already done)
+  Skipping query 498 (id=2738, already done)
+  Skipping query 499 (id=6295, already done)
+  Skipping query 500 (id=5076, already done)
+
+=== Run complete. Completed this run: 0 new queries ===
+Results saved to /home/yrh666/interrecbaseline-TAIRA/results/checkpoints/lastfm/seed_0/result-TAIRA.csv
+Summary row: hit_rate=0.7100  mrr=0.9188  ndcg=0.8647  success_rate=0.9204

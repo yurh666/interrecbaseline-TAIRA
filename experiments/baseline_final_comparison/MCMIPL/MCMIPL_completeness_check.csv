@@ -1,0 +1,13 @@
+method,run_dir,dataset,split,seed,expected_n_sessions,completed_n_sessions,errors,has_run_summary,has_full_log,has_metrics,has_latency,has_api_usage,completeness_status,caveat
+MCMIPL,/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_BOOK_s0.log,BOOK,implicit-CRS-RL,0,NA,NA,none in log footer,no,no,no,no,no,complete-ish,artifacts为tee训练日志非run_summary.json
+MCMIPL,/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_BOOK_s1.log,BOOK,implicit-CRS-RL,1,NA,NA,none in log footer,no,no,no,no,no,complete-ish,同上
+MCMIPL,/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_BOOK_s2.log,BOOK,implicit-CRS-RL,2,NA,NA,none in log footer,no,no,no,no,no,complete-ish,同上
+MCMIPL,/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_MOVIE_s0.log,MOVIE,implicit-CRS-RL,0,NA,NA,none in log footer,no,no,no,no,no,complete-ish,等价官方README MovieLens数据名MOVIE
+MCMIPL,/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_MOVIE_s1.log,MOVIE,implicit-CRS-RL,1,NA,NA,none in log footer,no,no,no,no,no,partial,存在DONE但未捕获best!!!!!!!!评测行可能被进度条淹没
+MCMIPL,/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_MOVIE_s2.log,MOVIE,implicit-CRS-RL,2,NA,NA,none in log footer,no,no,no,no,no,complete-ish,同上
+MCMIPL,/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_LAST_FM_STAR_s0.log,LAST_FM_STAR,implicit-CRS-RL,0,NA,NA,none in log footer,no,no,no,no,no,complete-ish,含断点续跑段
+MCMIPL,/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_LAST_FM_STAR_s1.log,LAST_FM_STAR,implicit-CRS-RL,1,NA,NA,none in log footer,no,no,no,no,no,complete-ish,同上
+MCMIPL,/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_LAST_FM_STAR_s2.log,LAST_FM_STAR,implicit-CRS-RL,2,NA,NA,none in log footer,no,no,no,no,no,complete-ish,同上
+MCMIPL,/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_YELP_STAR_s0.log,YELP_STAR,implicit-CRS-RL,0,NA,NA,none in excerpt,no,no,no,no,no,incomplete,无DONE；Phase B未完成
+MCMIPL,/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_YELP_STAR_s1.log,YELP_STAR,implicit-CRS-RL,1,NA,NA,none in excerpt,no,no,no,no,no,stale-complete,DONE时间为20260512非本轮流水线时间戳可对齐性差
+MCMIPL,/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_YELP_STAR_s2.log,YELP_STAR,implicit-CRS-RL,2,NA,NA,none in excerpt,no,no,no,no,no,incomplete,DONE时间与epoch-50.pkl未在本次抽检日志末确认对齐

@@ -1,0 +1,29 @@
+{
+  "seed": 2,
+  "n_queries": 397,
+  "n_success": 287,
+  "SR": 0.7229,
+  "HR@10": 0.4788,
+  "MRR@10": 0.704,
+  "NDCG@10": 0.6128,
+  "HR@10_succ": 0.6599,
+  "NDCG@10_succ": 0.8444,
+  "fail_rate": 0.2771,
+  "direct_HR@10": 0.0277,
+  "direct_MRR@10": 0.0073,
+  "direct_NDCG@10": 0.0109,
+  "protocol_interrec_item_id": {
+    "_note": "Top-10 \u63a8\u8350\u5217\u8868\u4e2d\u7684 item id \u4e0e future_test \u76ee\u6807 id \u96c6\u5408\u6c42\u4ea4\uff1b\u4e0e InterRec\uff08method1\uff09\u5728\u540c\u6570\u636e\u3001\u540c ID \u547d\u4e2d\u5b9a\u4e49\u4e0b\u6700\u5177\u53ef\u6bd4\u6027\u3002\uff08\u4e0e LLM \u6253\u5206\u7684 HR@10/NDCG \u53ef\u5206\u79bb\u62a5\u544a\u3002\uff09",
+    "HR@10": 0.0277,
+    "MRR@10": 0.0073,
+    "NDCG@10": 0.0109
+  },
+  "main_table_interrec_paradigm": {
+    "_note": "\u5355\u8f6e TAIRA\uff1a\u4e0e MCMIPL/\u4e3b\u8868\u300c\u591a\u8f6e SR@K\u300d\u5217\u5bf9\u9f50\u65f6\uff0cSR@5=SR@10=SR@15=HR@10\uff08LLM \u8bc4\u4f30\uff09\uff1bAvgT \u56fa\u5b9a\u4e3a 1\uff1bhDCG \u5217\u672c\u9879\u76ee\u7ea6\u5b9a\u586b NDCG@10\uff08\u4e0e\u5bf9\u8bdd\u5f0f hDCG \u516c\u5f0f\u4e0d\u540c\uff0c\u6b63\u6587\u9700\u811a\u6ce8\uff09\u3002",
+    "SR@5": 0.4788,
+    "SR@10": 0.4788,
+    "SR@15": 0.4788,
+    "AvgT": 1.0,
+    "hDCG": 0.6128
+  }
+}

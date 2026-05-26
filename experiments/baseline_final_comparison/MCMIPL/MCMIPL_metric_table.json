@@ -1,0 +1,73 @@
+{
+  "baseline": "MCMIPL",
+  "sources": [
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_LAST_FM_STAR_s0.log",
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_LAST_FM_STAR_s1.log",
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_LAST_FM_STAR_s2.log",
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_MOVIE_s0.log",
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_MOVIE_s1.log",
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_MOVIE_s2.log",
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_BOOK_s0.log",
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_BOOK_s1.log",
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_BOOK_s2.log",
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_YELP_STAR_s0.log",
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_YELP_STAR_s1.log",
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/train_YELP_STAR_s2.log",
+    "/home/yrh666/interrecbaseline-MCMIPL/main_table_experiments/logs/phase_b_cpu_master_20260516.log"
+  ],
+  "metric_definitions_note": "Log field SR10 is CRS training-time success-rate style metric from MCMIPL evaluate(); not interchangeable with TAIRA SR@10:=HR@10 (LLM eval) without bridging study.",
+  "aggregates_three_domain_table_basis": {
+    "LastFM_is_LAST_FM_STAR": {
+      "SR10_mean_seed012": [0.56675, 0.582, 0.5755],
+      "SR10_aggregate_mean_std": [
+        0.57475,
+        0.007652613932507
+      ],
+      "AvgT_mean_seed012": [
+        8.263,
+        8.115,
+        8.171
+      ],
+      "AvgT_aggregate_mean_std": [
+        8.183,
+        0.07472616676907753
+      ],
+      "NDCG10_MRR10": "not_available_in_logs",
+      "seeds_completed": [
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "MovieLens_is_MOVIE_dataset_name": {
+      "SR10_mean_seed02_only": [
+        0.48,
+        0.49079999999999996
+      ],
+      "SR10_aggregate_two_seed_mean_std": [
+        0.48539999999999994,
+        0.007636753236814736
+      ],
+      "AvgT_aggregate_two_seed_mean_std": [
+        10.2888,
+        0.026021529547664596
+      ],
+      "NDCG10_MRR10": "not_available_in_logs",
+      "seed1_final_best_line_missing": true
+    },
+    "Yelp_is_YELP_STAR": {
+      "aggregate_table_cells": "not_available_until_current_pipeline_three_seeds_done",
+      "staleness_warnings": [
+        "train_YELP_STAR_s1.log DONE timestamp Tue May 12 02:19:50 AM CST 2026 appears older than Phase B continuity"
+      ]
+    },
+    "extra_Amazon_Book_not_in_three_col_table": {
+      "BOOK_SR10_seed012": [
+        0.3884,
+        0.4076,
+        0.4068
+      ],
+      "notes": "README lists Amazon-Book alongside MovieLens/LastFM/Yelp; TAIRA triple-column table excludes BOOK."
+    }
+  }
+}

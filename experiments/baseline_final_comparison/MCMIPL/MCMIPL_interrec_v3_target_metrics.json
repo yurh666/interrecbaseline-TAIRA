@@ -1,0 +1,17 @@
+{
+  "baseline": "MCMIPL",
+  "generated_without_rerun_or_api": true,
+  "A_minimum_acceptable": {
+    "SR10_or_equivalent_quality": "InterRec HR@10 或 SR@10 定义需先与 CRS SR10 对齐；当前无法直接要求不低于 MCMIPL 数值。",
+    "NDCG_MRR_tolerance": "若坚持 LLM-eval NDCG@10/MRR@10：MCMIPL 暂无同口径观测值 → cannot_set_numeric_target_yet。"
+  },
+  "B_paper_ready": {
+    "quality_gap": "在统一 candidate + session manifest 前提下，任一域 SR10/HR@10 与 MCMIPL 同定义下取得非劣或可解释优势。"
+  },
+  "C_strong": {
+    "multi_metric": "在 LastFM/MovieLens/Yelp 三域至少在两个 quality 维度显著优于 CRS-SR baseline，并完成三 seed。"
+  },
+  "D_efficiency": {
+    "note": "MCMIPL 本轮为 CPU RL，无 tokens；若以 wall_time 对齐需双方记录端到端会话时长。"
+  }
+}

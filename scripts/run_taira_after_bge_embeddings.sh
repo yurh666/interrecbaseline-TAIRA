@@ -48,4 +48,7 @@ else
 fi
 
 cd "$REPO_ROOT/TAIRA"
-exec python3 main.py
+SEED="${PYTHONHASHSEED:-0}"
+CKPT="$REPO_ROOT/results/checkpoints/$DOMAIN/seed_${SEED}/result-TAIRA.csv"
+mkdir -p "$(dirname "$CKPT")"
+exec python3 main_resume.py --resume-csv "$CKPT"

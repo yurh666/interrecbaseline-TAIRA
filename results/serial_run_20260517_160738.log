@@ -1,0 +1,3311 @@
+[2026-05-17T16:07:38+08:00] TAIRA_PYTHON=/home/yrh666/miniconda3/envs/taira/bin/python
+[2026-05-17T16:07:38+08:00] Log file: /home/yrh666/interrecbaseline-TAIRA/results/serial_run_20260517_160738.log
+[2026-05-17T16:07:38+08:00] === Phase 1: LastFM (seeds 0 1 2) ===
+[Sun May 17 16:07:38 CST 2026] Starting TAIRA lastfm — seeds: 0 1 2
+TAIRA_DIR: /home/yrh666/interrecbaseline-TAIRA/TAIRA
+
+=============================================
+[Sun May 17 16:07:38 CST 2026] Running seed=0
+=============================================
+Configuration: {'QUERY_NUMBER': 500, 'TOPN_ITEMS': 500, 'TOPK_ITEMS': 10, 'DOMAIN': 'amazon_book', 'MODEL': 'deepseek-chat', 'METHOD': 'TAIRA', 'OPENAI_BASE_URL': 'https://api.deepseek.com/v1', 'OPENAI_API_KEY': '', 'BGE_M3_MODEL': 'BAAI/bge-m3', 'BGE_RERANKER_MODEL': 'BAAI/bge-reranker-base', 'ITEM_RETRIEVAL_RANKING_BACKEND': 'bm25', 'ITEM_RETRIEVAL_KEYWORD_BACKEND': 'bm25', 'BM25_FALLBACK_TO_BGE': False, 'BM25_FALLBACK_MIN_SCORE': 0.0, 'GOOGLE_API_KEY': '', 'GOOGLE_CSE_ID': '', 'ENABLE_LEARNING': False}
+Processing query 1
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 2
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 3
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 4
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 5
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 6
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 7
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 8
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 9
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 10
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 11
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 12
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 13
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 14
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 15
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 16
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 17
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 18
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 19
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 20
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 21
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 22
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 23
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 24
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 25
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 26
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 27
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 28
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 29
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 30
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 31
+Processing query 32
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 33
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 34
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 35
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 36
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 37
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 38
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 39
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 40
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 41
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 42
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 43
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 44
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 45
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 46
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 47
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 48
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 49
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 50
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 51
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 52
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 53
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 54
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 55
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 56
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 57
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='InteractorAgent').
+Processing query 58
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 59
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 60
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 61
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 62
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 63
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 64
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 65
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 66
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 67
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 68
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 69
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 70
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 71
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 72
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 73
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 74
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 75
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 76
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 77
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 78
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 79
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 80
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 81
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 82
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 83
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 84
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 85
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 86
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 87
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 88
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 89
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 90
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 91
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 92
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 93
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 94
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 95
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 96
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 97
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 98
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 99
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 100
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 101
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 102
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 103
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 104
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 105
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 106
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 107
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 108
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 109
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 110
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 111
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 112
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 113
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 114
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 115
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 116
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 117
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 118
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 119
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 120
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 121
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 122
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 123
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 124
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 125
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 126
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 127
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 128
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 129
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 130
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 131
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 132
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 133
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 134
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 135
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 136
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 137
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 138
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 139
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 140
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 141
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 142
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 143
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 144
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 145
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 146
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 147
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='InteractorAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 148
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 149
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 150
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 151
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 152
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 153
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='InteractorAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 154
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 155
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 156
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 157
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 158
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 159
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 160
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 161
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 162
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 163
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 164
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 165
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 166
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 167
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 168
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 169
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 170
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 171
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 172
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 173
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 174
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 175
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 176
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 177
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 178
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 179
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 180
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 181
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 182
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 183
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 184
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 185
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 186
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 187
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 188
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 189
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 190
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 191
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 192
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 193
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 194
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 195
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 196
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 197
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 198
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 199
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 200
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 201
+Processing query 202
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 203
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 204
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 205
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 206
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 207
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 208
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 209
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 210
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 211
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 212
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 213
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 214
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 215
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 216
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 217
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 218
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 219
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 220
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 221
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 222
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 223
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 224
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 225
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 226
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 227
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 228
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 229
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 230
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 231
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 232
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 233
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 234
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 235
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 236
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 237
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 238
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 239
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 240
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 241
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 242
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 243
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 244
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 245
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 246
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 247
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 248
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 249
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 250
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 251
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 252
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 253
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 254
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 255
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 256
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 257
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 258
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 259
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 260
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 261
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 262
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 263
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 264
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 265
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 266
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 267
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 268
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 269
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 270
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 271
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 272
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 273
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 274
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 275
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 276
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 277
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 278
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 279
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 280
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 281
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 282
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 283
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 284
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 285
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 286
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 287
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 288
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 289
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 290
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 291
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 292
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 293
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 294
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 295
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 296
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 297
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 298
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 299
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 300
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 301
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 302
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 303
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 304
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 305
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 306
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 307
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 308
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 309
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 310
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 311
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 312
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 313
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 314
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 315
+Processing query 316
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 317
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 318
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 319
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 320
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 321
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 322
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 323
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 324
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 325
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 326
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 327
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 328
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 329
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 330
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 331
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 332
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 333
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 334
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 335
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 336
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 337
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 338
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 339
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 340
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 341
+Processing query 342
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 343
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 344
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 345
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 346
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 347
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 348
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 349
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 350
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 351
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 352
+Processing query 353
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 354
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 355
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 356
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 357
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 358
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 359
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 360
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 361
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 362
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 363
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 364
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 365
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 366
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 367
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 368
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 369
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 370
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 371
+Processing query 372
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 373
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 374
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 375
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 376
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 377
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 378
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 379
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 380
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 381
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 382
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 383
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 384
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 385
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 386
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 387
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 388
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 389
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 390
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 391
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 392
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 393
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 394
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 395
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 396
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 397
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 398
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 399
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 400
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 401
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 402
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 403
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 404
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 405
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 406
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 407
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 408
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 409
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 410
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 411
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 412
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 413
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 414
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 415
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 416
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 417
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 418
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 419
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 420
+Processing query 421
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 422
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 423
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 424
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 425
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 426
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 427
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 428
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 429
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 430
+Processing query 431
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 432
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 433
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 434
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 435
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 436
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 437
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 438
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 439
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 440
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 441
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 442
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 443
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 444
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 445
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 446
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 447
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 448
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 449
+Processing query 450
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 451
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 452
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 453
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 454
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 455
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 456
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 457
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 458
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 459
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 460
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 461
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 462
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 463
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 464
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 465
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 466
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 467
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 468
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 469
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 470
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 471
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 472
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 473
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 474
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 475
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 476
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 477
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 478
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 479
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 480
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 481
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 482
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 483
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 484
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 485
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 486
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 487
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 488
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 489
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 490
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 491
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 492
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 493
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 494
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 495
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 496
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 497
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 498
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 499
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 500
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Results saved to data/amazon_book/logs/TAIRA-2026-05-17 16_07_39/result-TAIRA-2026-05-17 16_07_39.csv
+[Sun May 17 19:50:44 CST 2026] Seed 0 done.
+[Sun May 17 19:50:44 CST 2026] Parsing results from: /home/yrh666/interrecbaseline-TAIRA/TAIRA/data/lastfm/logs/TAIRA-2026-05-09 15_01_09/result-TAIRA-2026-05-09 15_01_09.csv
+{
+  "seed": 0,
+  "n_queries": 500,
+  "n_success": 485,
+  "SR": 0.97,
+  "HR@10": 0.7206,
+  "MRR@10": 0.97,
+  "NDCG@10": 0.8981,
+  "HR@10_succ": 0.7429,
+  "NDCG@10_succ": 0.9258,
+  "fail_rate": 0.03,
+  "direct_HR@10": 0.086,
+  "direct_MRR@10": 0.0214,
+  "direct_NDCG@10": 0.0361,
+  "protocol_interrec_item_id": {
+    "_note": "Top-10 \u63a8\u8350\u5217\u8868\u4e2d\u7684 item id \u4e0e future_test \u76ee\u6807 id \u96c6\u5408\u6c42\u4ea4\uff1b\u4e0e InterRec\uff08method1\uff09\u5728\u540c\u6570\u636e\u3001\u540c ID \u547d\u4e2d\u5b9a\u4e49\u4e0b\u6700\u5177\u53ef\u6bd4\u6027\u3002\uff08\u4e0e LLM \u6253\u5206\u7684 HR@10/NDCG \u53ef\u5206\u79bb\u62a5\u544a\u3002\uff09",
+    "HR@10": 0.086,
+    "MRR@10": 0.0214,
+    "NDCG@10": 0.0361
+  },
+  "main_table_interrec_paradigm": {
+    "_note": "\u5355\u8f6e TAIRA\uff1a\u4e0e MCMIPL/\u4e3b\u8868\u300c\u591a\u8f6e SR@K\u300d\u5217\u5bf9\u9f50\u65f6\uff0cSR@5=SR@10=SR@15=HR@10\uff08LLM \u8bc4\u4f30\uff09\uff1bAvgT \u56fa\u5b9a\u4e3a 1\uff1bhDCG \u5217\u672c\u9879\u76ee\u7ea6\u5b9a\u586b NDCG@10\uff08\u4e0e\u5bf9\u8bdd\u5f0f hDCG \u516c\u5f0f\u4e0d\u540c\uff0c\u6b63\u6587\u9700\u811a\u6ce8\uff09\u3002",
+    "SR@5": 0.7206,
+    "SR@10": 0.7206,
+    "SR@15": 0.7206,
+    "AvgT": 1.0,
+    "hDCG": 0.8981
+  }
+}
+
+Saved to /home/yrh666/interrecbaseline-TAIRA/results/metrics/run_lastfm_seed0.json
+[Sun May 17 19:50:45 CST 2026] Seed 0 metrics saved.
+
+=============================================
+[Sun May 17 19:50:45 CST 2026] Running seed=1
+=============================================
+Configuration: {'QUERY_NUMBER': 500, 'TOPN_ITEMS': 500, 'TOPK_ITEMS': 10, 'DOMAIN': 'amazon_book', 'MODEL': 'deepseek-chat', 'METHOD': 'TAIRA', 'OPENAI_BASE_URL': 'https://api.deepseek.com/v1', 'OPENAI_API_KEY': '', 'BGE_M3_MODEL': 'BAAI/bge-m3', 'BGE_RERANKER_MODEL': 'BAAI/bge-reranker-base', 'ITEM_RETRIEVAL_RANKING_BACKEND': 'bm25', 'ITEM_RETRIEVAL_KEYWORD_BACKEND': 'bm25', 'BM25_FALLBACK_TO_BGE': False, 'BM25_FALLBACK_MIN_SCORE': 0.0, 'GOOGLE_API_KEY': '', 'GOOGLE_CSE_ID': '', 'ENABLE_LEARNING': False}
+Processing query 1
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 2
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 3
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 4
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 5
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 6
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 7
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 8
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 9
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 10
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 11
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 12
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 13
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 14
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 15
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 16
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 17
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 18
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 19
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 20
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 21
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 22
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 23
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 24
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 25
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 26
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 27
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 28
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 29
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 30
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 31
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 32
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 33
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 34
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 35
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 36
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 37
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 38
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 39
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 40
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 41
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 42
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 43
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 44
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 45
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 46
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 47
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 48
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 49
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 50
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 51
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='InteractorAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 52
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 53
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 54
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 55
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 56
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 57
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 58
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 59
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 60
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 61
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 62
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 63
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 64
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 65
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 66
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 67
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 68
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 69
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 70
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 71
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 72
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 73
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 74
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 75
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 76
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 77
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 78
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 79
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 80
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 81
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 82
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 83
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 84
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 85
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 86
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 87
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 88
+Processing query 89
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 90
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 91
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 92
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 93
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 94
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 95
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 96
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 97
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 98
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 99
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 100
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 101
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 102
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 103
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 104
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 105
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 106
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 107
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 108
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 109
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 110
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 111
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 112
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 113
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 114
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 115
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 116
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 117
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 118
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 119
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 120
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 121
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 122
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 123
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 124
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 125
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 126
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 127
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 128
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 129
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 130
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 131
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 132
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 133
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 134
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 135
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 136
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 137
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 138
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 139
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 140
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 141
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 142
+Processing query 143
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 144
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 145
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 146
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 147
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 148
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 149
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 150
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 151
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 152
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 153
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 154
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 155
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 156
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 157
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 158
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 159
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 160
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 161
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 162
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 163
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 164
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 165
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 166
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 167
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 168
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 169
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 170
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 171
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 172
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 173
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 174
+Processing query 175
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 176
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 177
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 178
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 179
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 180
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 181
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 182
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 183
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 184
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 185
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 186
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 187
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 188
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 189
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 190
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 191
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 192
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 193
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 194
+Processing query 195
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 196
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 197
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 198
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 199
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 200
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 201
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 202
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 203
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 204
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 205
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 206
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 207
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 208
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 209
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 210
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 211
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 212
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 213
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 214
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 215
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 216
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 217
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 218
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 219
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 220
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 221
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 222
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 223
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 224
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 225
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 226
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 227
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 228
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 229
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 230
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 231
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 232
+Processing query 233
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 234
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 235
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 236
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 237
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 238
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 239
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 240
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 241
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 242
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 243
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 244
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 245
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 246
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 247
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 248
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 249
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 250
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 251
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 252
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 253
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 254
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 255
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 256
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 257
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 258
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 259
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 260
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 261
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 262
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 263
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 264
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 265
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 266
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 267
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 268
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 269
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 270
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 271
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 272
+Processing query 273
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 274
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 275
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 276
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 277
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 278
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 279
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 280
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 281
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 282
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 283
+Processing query 284
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 285
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 286
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 287
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 288
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 289
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 290
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 291
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 292
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 293
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 294
+Error processing query 294: Extra data: line 18 column 1 (char 541)
+Processing query 295
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 296
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 297
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 298
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 299
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 300
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 301
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 302
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 303
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 304
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 305
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 306
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 307
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 308
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 309
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 310
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 311
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 312
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 313
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 314
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 315
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 316
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 317
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 318
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 319
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 320
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 321
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 322
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 323
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 324
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 325
+Processing query 326
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 327
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 328
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 329
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 330
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 331
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 332
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 333
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 334
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 335
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 336
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 337
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 338
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 339
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 340
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 341
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 342
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 343
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 344
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 345
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 346
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 347
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Error processing query 347: the JSON object must be str, bytes or bytearray, not NoneType
+Processing query 348
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 349
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 350
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 351
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 352
+Processing query 353
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 354
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 355
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 356
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 357
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 358
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 359
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 360
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 361
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 362
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 363
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 364
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 365
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 366
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 367
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 368
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 369
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 370
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 371
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 372
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 373
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 374
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 375
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 376
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 377
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 378
+Processing query 379
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 380
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 381
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 382
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 383
+Processing query 384
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 385
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 386
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 387
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 388
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 389
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 390
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 391
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 392
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 393
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 394
+Processing query 395
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 396
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 397
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 398
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 399
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 400
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 401
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 402
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 403
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 404
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 405
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 406
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 407
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='InteractorAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 408
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 409
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 410
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 411
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 412
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 413
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 414
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 415
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 416
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 417
+Processing query 418
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 419
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 420
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 421
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 422
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 423
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 424
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 425
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 426
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 427
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 428
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 429
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 430
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 431
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 432
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 433
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 434
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 435
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 436
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 437
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 438
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 439
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 440
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 441
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 442
+Processing query 443
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 444
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 445
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 446
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 447
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 448
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 449
+Processing query 450
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 451
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 452
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 453
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 454
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 455
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 456
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 457
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 458
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 459
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 460
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 461
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 462
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 463
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 464
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 465
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 466
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 467
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 468
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 469
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 470
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 471
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 472
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 473
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 474
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 475
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 476
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 477
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 478
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 479
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 480
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 481
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 482
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 483
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 484
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 485
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 486
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 487
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 488
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 489
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 490
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 491
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 492
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 493
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 494
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 495
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 496
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 497
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 498
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 499
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 500
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Results saved to data/amazon_book/logs/TAIRA-2026-05-17 19_50_46/result-TAIRA-2026-05-17 19_50_46.csv
+[Mon May 18 00:09:53 CST 2026] Seed 1 done.
+[Mon May 18 00:09:53 CST 2026] Parsing results from: /home/yrh666/interrecbaseline-TAIRA/TAIRA/data/lastfm/logs/TAIRA-2026-05-09 15_01_09/result-TAIRA-2026-05-09 15_01_09.csv
+{
+  "seed": 1,
+  "n_queries": 500,
+  "n_success": 485,
+  "SR": 0.97,
+  "HR@10": 0.7206,
+  "MRR@10": 0.97,
+  "NDCG@10": 0.8981,
+  "HR@10_succ": 0.7429,
+  "NDCG@10_succ": 0.9258,
+  "fail_rate": 0.03,
+  "direct_HR@10": 0.086,
+  "direct_MRR@10": 0.0214,
+  "direct_NDCG@10": 0.0361,
+  "protocol_interrec_item_id": {
+    "_note": "Top-10 \u63a8\u8350\u5217\u8868\u4e2d\u7684 item id \u4e0e future_test \u76ee\u6807 id \u96c6\u5408\u6c42\u4ea4\uff1b\u4e0e InterRec\uff08method1\uff09\u5728\u540c\u6570\u636e\u3001\u540c ID \u547d\u4e2d\u5b9a\u4e49\u4e0b\u6700\u5177\u53ef\u6bd4\u6027\u3002\uff08\u4e0e LLM \u6253\u5206\u7684 HR@10/NDCG \u53ef\u5206\u79bb\u62a5\u544a\u3002\uff09",
+    "HR@10": 0.086,
+    "MRR@10": 0.0214,
+    "NDCG@10": 0.0361
+  },
+  "main_table_interrec_paradigm": {
+    "_note": "\u5355\u8f6e TAIRA\uff1a\u4e0e MCMIPL/\u4e3b\u8868\u300c\u591a\u8f6e SR@K\u300d\u5217\u5bf9\u9f50\u65f6\uff0cSR@5=SR@10=SR@15=HR@10\uff08LLM \u8bc4\u4f30\uff09\uff1bAvgT \u56fa\u5b9a\u4e3a 1\uff1bhDCG \u5217\u672c\u9879\u76ee\u7ea6\u5b9a\u586b NDCG@10\uff08\u4e0e\u5bf9\u8bdd\u5f0f hDCG \u516c\u5f0f\u4e0d\u540c\uff0c\u6b63\u6587\u9700\u811a\u6ce8\uff09\u3002",
+    "SR@5": 0.7206,
+    "SR@10": 0.7206,
+    "SR@15": 0.7206,
+    "AvgT": 1.0,
+    "hDCG": 0.8981
+  }
+}
+
+Saved to /home/yrh666/interrecbaseline-TAIRA/results/metrics/run_lastfm_seed1.json
+[Mon May 18 00:09:53 CST 2026] Seed 1 metrics saved.
+
+=============================================
+[Mon May 18 00:09:53 CST 2026] Running seed=2
+=============================================
+Configuration: {'QUERY_NUMBER': 500, 'TOPN_ITEMS': 500, 'TOPK_ITEMS': 10, 'DOMAIN': 'amazon_book', 'MODEL': 'deepseek-chat', 'METHOD': 'TAIRA', 'OPENAI_BASE_URL': 'https://api.deepseek.com/v1', 'OPENAI_API_KEY': '', 'BGE_M3_MODEL': 'BAAI/bge-m3', 'BGE_RERANKER_MODEL': 'BAAI/bge-reranker-base', 'ITEM_RETRIEVAL_RANKING_BACKEND': 'bm25', 'ITEM_RETRIEVAL_KEYWORD_BACKEND': 'bm25', 'BM25_FALLBACK_TO_BGE': False, 'BM25_FALLBACK_MIN_SCORE': 0.0, 'GOOGLE_API_KEY': '', 'GOOGLE_CSE_ID': '', 'ENABLE_LEARNING': False}
+Processing query 1
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 2
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 3
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 4
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 5
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 6
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 7
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 8
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 9
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 10
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 11
+Processing query 12
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 13
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 14
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 15
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 16
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 17
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 18
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 19
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 20
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 21
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 22
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 23
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 24
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 25
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 26
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 27
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 28
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 29
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 30
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 31
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 32
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 33
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 34
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 35
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 36
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 37
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 38
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 39
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 40
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 41
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 42
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 43
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 44
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 45
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 46
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 47
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 48
+Processing query 49
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 50
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 51
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 52
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 53
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 54
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 55
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 56
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 57
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 58
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 59
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 60
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 61
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 62
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 63
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 64
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 65
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 66
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 67
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 68
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 69
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 70
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 71
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 72
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 73
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 74
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 75
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 76
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 77
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 78
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 79
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 80
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 81
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 82
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 83
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 84
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 85
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 86
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 87
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 88
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 89
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 90
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 91
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 92
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 93
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 94
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 95
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 96
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 97
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 98
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 99
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 100
+Processing query 101
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 102
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 103
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 104
+Processing query 105
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 106
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 107
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 108
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 109
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 110
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 111
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 112
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 113
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 114
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 115
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 116
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 117
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 118
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 119
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 120
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 121
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 122
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 123
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 124
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 125
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 126
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 127
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 128
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 129
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 130
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 131
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 132
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 133
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 134
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 135
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 136
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 137
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 138
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 139
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 140
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 141
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 142
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 143
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 144
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 145
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 146
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 147
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 148
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 149
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 150
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 151
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 152
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 153
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 154
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 155
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 156
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 157
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 158
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 159
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 160
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 161
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 162
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 163
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 164
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 165
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 166
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 167
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 168
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 169
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 170
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 171
+Processing query 172
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 173
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 174
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 175
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 176
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 177
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 178
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 179
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 180
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 181
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 182
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 183
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 184
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 185
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 186
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 187
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 188
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 189
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 190
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 191
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 192
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 193
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 194
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 195
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 196
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 197
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 198
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 199
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 200
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 201
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 202
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 203
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 204
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 205
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 206
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 207
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 208
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 209
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 210
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 211
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 212
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 213
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 214
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 215
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 216
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 217
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 218
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 219
+Processing query 220
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 221
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 222
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 223
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 224
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 225
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 226
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 227
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 228
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 229
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 230
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 231
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 232
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 233
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 234
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 235
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 236
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 237
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 238
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 239
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 240
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 241
+Processing query 242
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 243
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 244
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 245
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 246
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 247
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 248
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 249
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 250
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 251
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 252
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 253
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 254
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 255
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 256
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 257
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 258
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 259
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 260
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 261
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 262
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 263
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 264
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 265
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 266
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 267
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 268
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 269
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 270
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 271
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 272
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 273
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 274
+Processing query 275
+Processing query 276
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 277
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 278
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 279
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 280
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 281
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 282
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 283
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 284
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 285
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 286
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 287
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 288
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 289
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 290
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 291
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 292
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 293
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 294
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 295
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 296
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 297
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 298
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 299
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 300
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 301
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 302
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 303
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 304
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 305
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 306
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 307
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 308
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 309
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 310
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 311
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 312
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 313
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 314
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 315
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 316
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 317
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 318
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 319
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 320
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 321
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 322
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 323
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 324
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 325
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 326
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 327
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 328
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 329
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 330
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 331
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 332
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 333
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 334
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 335
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 336
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='InteractorAgent').
+Processing query 337
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 338
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 339
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 340
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 341
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 342
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 343
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 344
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 345
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 346
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 347
+Processing query 348
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 349
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 350
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 351
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 352
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 353
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 354
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 355
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 356
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 357
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 358
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 359
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 360
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 361
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 362
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 363
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 364
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 365
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 366
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 367
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 368
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 369
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 370
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 371
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 372
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 373
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 374
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 375
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 376
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 377
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 378
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 379
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 380
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 381
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 382
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 383
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 384
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 385
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 386
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 387
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 388
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 389
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 390
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 391
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 392
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 393
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 394
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 395
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 396
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 397
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 398
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 399
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 400
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 401
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 402
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 403
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 404
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 405
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 406
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 407
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 408
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 409
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 410
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 411
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 412
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 413
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 414
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 415
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 416
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 417
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 418
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 419
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 420
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 421
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 422
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 423
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 424
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 425
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 426
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 427
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 428
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 429
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 430
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 431
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 432
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 433
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 434
+Processing query 435
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 436
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 437
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 438
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 439
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+ItemRetrievalAgent: BM25 catalog retrieval (prev='ItemRetrievalAgent').
+Processing query 440
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 441
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 442
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 443
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 444
+ItemRetrievalAgent: BM25 catalog retrieval (prev='SearcherAgent').
+Processing query 445
+Error processing query 445: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 446
+Error processing query 446: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 447
+Error processing query 447: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 448
+Error processing query 448: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 449
+Error processing query 449: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 450
+Error processing query 450: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 451
+Error processing query 451: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 452
+Error processing query 452: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 453
+Error processing query 453: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 454
+Error processing query 454: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 455
+Error processing query 455: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 456
+Error processing query 456: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 457
+Error processing query 457: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 458
+Error processing query 458: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 459
+Error processing query 459: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 460
+Error processing query 460: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 461
+Error processing query 461: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 462
+Error processing query 462: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 463
+Error processing query 463: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 464
+Error processing query 464: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 465
+Error processing query 465: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 466
+Error processing query 466: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 467
+Error processing query 467: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 468
+Error processing query 468: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 469
+Error processing query 469: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 470
+Error processing query 470: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 471
+Error processing query 471: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 472
+Error processing query 472: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 473
+Error processing query 473: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 474
+Error processing query 474: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 475
+Error processing query 475: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 476
+Error processing query 476: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 477
+Error processing query 477: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 478
+Error processing query 478: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 479
+Error processing query 479: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 480
+Error processing query 480: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 481
+Error processing query 481: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 482
+Error processing query 482: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 483
+Error processing query 483: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 484
+Error processing query 484: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 485
+Error processing query 485: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 486
+Error processing query 486: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 487
+Error processing query 487: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 488
+Error processing query 488: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 489
+Error processing query 489: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 490
+Error processing query 490: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 491
+Error processing query 491: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 492
+Error processing query 492: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 493
+Error processing query 493: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 494
+Error processing query 494: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 495
+Error processing query 495: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 496
+Error processing query 496: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 497
+Error processing query 497: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 498
+Error processing query 498: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 499
+Error processing query 499: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Processing query 500
+Error processing query 500: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Results saved to data/amazon_book/logs/TAIRA-2026-05-18 00_09_54/result-TAIRA-2026-05-18 00_09_54.csv
+[Mon May 18 03:18:56 CST 2026] Seed 2 done.
+[Mon May 18 03:18:56 CST 2026] Parsing results from: /home/yrh666/interrecbaseline-TAIRA/TAIRA/data/lastfm/logs/TAIRA-2026-05-09 15_01_09/result-TAIRA-2026-05-09 15_01_09.csv
+{
+  "seed": 2,
+  "n_queries": 500,
+  "n_success": 485,
+  "SR": 0.97,
+  "HR@10": 0.7206,
+  "MRR@10": 0.97,
+  "NDCG@10": 0.8981,
+  "HR@10_succ": 0.7429,
+  "NDCG@10_succ": 0.9258,
+  "fail_rate": 0.03,
+  "direct_HR@10": 0.086,
+  "direct_MRR@10": 0.0214,
+  "direct_NDCG@10": 0.0361,
+  "protocol_interrec_item_id": {
+    "_note": "Top-10 \u63a8\u8350\u5217\u8868\u4e2d\u7684 item id \u4e0e future_test \u76ee\u6807 id \u96c6\u5408\u6c42\u4ea4\uff1b\u4e0e InterRec\uff08method1\uff09\u5728\u540c\u6570\u636e\u3001\u540c ID \u547d\u4e2d\u5b9a\u4e49\u4e0b\u6700\u5177\u53ef\u6bd4\u6027\u3002\uff08\u4e0e LLM \u6253\u5206\u7684 HR@10/NDCG \u53ef\u5206\u79bb\u62a5\u544a\u3002\uff09",
+    "HR@10": 0.086,
+    "MRR@10": 0.0214,
+    "NDCG@10": 0.0361
+  },
+  "main_table_interrec_paradigm": {
+    "_note": "\u5355\u8f6e TAIRA\uff1a\u4e0e MCMIPL/\u4e3b\u8868\u300c\u591a\u8f6e SR@K\u300d\u5217\u5bf9\u9f50\u65f6\uff0cSR@5=SR@10=SR@15=HR@10\uff08LLM \u8bc4\u4f30\uff09\uff1bAvgT \u56fa\u5b9a\u4e3a 1\uff1bhDCG \u5217\u672c\u9879\u76ee\u7ea6\u5b9a\u586b NDCG@10\uff08\u4e0e\u5bf9\u8bdd\u5f0f hDCG \u516c\u5f0f\u4e0d\u540c\uff0c\u6b63\u6587\u9700\u811a\u6ce8\uff09\u3002",
+    "SR@5": 0.7206,
+    "SR@10": 0.7206,
+    "SR@15": 0.7206,
+    "AvgT": 1.0,
+    "hDCG": 0.8981
+  }
+}
+
+Saved to /home/yrh666/interrecbaseline-TAIRA/results/metrics/run_lastfm_seed2.json
+[Mon May 18 03:18:56 CST 2026] Seed 2 metrics saved.
+/home/yrh666/interrecbaseline-TAIRA/scripts/run_lastfm_seeds.sh: line 68: unexpected EOF while looking for matching `"'

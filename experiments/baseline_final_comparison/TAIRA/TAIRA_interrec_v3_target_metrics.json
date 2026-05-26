@@ -1,0 +1,33 @@
+{
+  "baseline_name": "TAIRA",
+  "source_files": [
+    "/home/yrh666/interrecbaseline-TAIRA/results/EXPERIMENT_SUMMARY.md",
+    "/home/yrh666/interrecbaseline-TAIRA/results/taira_results.csv"
+  ],
+  "taira_mean_by_dataset_llm_eval": {
+    "amazon_book": {"HR@10": 0.6739, "NDCG@10": 0.8366, "MRR@10": 0.9088, "fail_rate_mean_about": 0.0898},
+    "lastfm": {"HR@10": 0.7224, "NDCG@10": 0.8705, "MRR@10": 0.9214, "fail_rate_mean_about": 0.0773},
+    "movielens": {"HR@10": 0.4774, "NDCG@10": 0.6117, "MRR@10": 0.7024, "fail_rate_mean_about": 0.2796},
+    "yelp": {"HR@10": 0.2956, "NDCG@10": 0.3661, "MRR@10": 0.4202, "fail_rate_mean_about": 0.5664}
+  },
+  "target_thresholds_placeholder": {
+    "A_minimum_acceptable": {
+      "SR@10_if_proxy_HR10": ">= taira_mean_HR10 - 0.02",
+      "NDCG@10": ">= taira_mean_NDCG10 - 0.03",
+      "MRR@10": ">= max(0.92 * taira_mean_MRR10, taira_mean_MRR10 - 0.05)"
+    },
+    "B_paper_ready": "SR@10_or_NDCG10 strictly better under paired same-setting eval with variance report",
+    "C_strong": "at least two of {HR@10,NDCG@10,MRR@10} better + stability + cost bounded if measurable",
+    "D_efficiency": "if flat quality vs A: tokens/wall_HTTP -20pct OR fewer avg success turns vs multi-turn CRS baselines only"
+  },
+  "metrics_cannot_numeric_yet": [
+    "preference_error",
+    "wall_time_mean",
+    "LLM_HTTP_count",
+    "prompt_tokens",
+    "completion_tokens",
+    "total_tokens",
+    "paired_Miss_to_Hit",
+    "ask_rate_defined_as_CRS"
+  ]
+}

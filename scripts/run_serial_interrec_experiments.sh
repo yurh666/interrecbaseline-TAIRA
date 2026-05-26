@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 # 单脚本串行跑完全部实验（一个接一个，不并行 main.py）：
 # 前置：各域已存在 TAIRA/data/<domain>/project_embeddings.npy（BGE-M3）；见 scripts/gpu_bge_offline_phase.sh。
-#   LastFM 仅 PYTHONHASHSEED=2；yelp / movielens / amazon_book 各 seed 0→1→2。
+#   lastfm / yelp / movielens / amazon_book 各跑 PYTHONHASHSEED=0→1→2（串行，不并行 main.py）。
+# 断点续跑：每 seed 写入 results/checkpoints/<domain>/seed_<k>/result-TAIRA.csv，每做完一题就追加；
+#   中断后重复执行本脚本即可从未完成的 query 继续；已完成且 metrics JSON 齐全则自动 skip。
+#   强制重跑：TAIRA_FORCE_RERUN=1 bash scripts/run_serial_interrec_experiments.sh
 # 每段 run 结束由子脚本用「与 main.py 相同」的 Python 调 parse_taira_metrics.py。
 # 收尾：collect_taira_results.py（汇总 CSV）+ write_experiment_summary.md（Markdown 报告）。
 #
@@ -22,6 +25,14 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$REPO_ROOT"
 
+if [[ -f "$REPO_ROOT/.env.local" ]]; then
+  set -a
+  # shellcheck disable=SC1090
+  source "$REPO_ROOT/.env.local"
+  set +a
+  echo "[$(date -Iseconds)] Loaded REPO_ROOT/.env.local (OPENAI_* 等)"
+fi
+
 : "${TAIRA_PYTHON:=python}"
 RUN_LOG="${RUN_LOG:-$REPO_ROOT/results/serial_run_$(date +%Y%m%d_%H%M%S).log}"
 mkdir -p "$REPO_ROOT/results"
@@ -30,8 +41,8 @@ run_pipeline() {
   echo "[$(date -Iseconds)] TAIRA_PYTHON=$(command -v "$TAIRA_PYTHON")"
   echo "[$(date -Iseconds)] Log file: $RUN_LOG"
 
-  echo "[$(date -Iseconds)] === Phase 1: LastFM, PYTHONHASHSEED=2 only ==="
-  bash "$SCRIPT_DIR/run_lastfm_seeds.sh" 2
+  echo "[$(date -Iseconds)] === Phase 1: LastFM (seeds 0 1 2) ==="
+  bash "$SCRIPT_DIR/run_lastfm_seeds.sh"
 
   echo "[$(date -Iseconds)] === Phase 2: yelp (seeds 0 1 2) ==="
   bash "$SCRIPT_DIR/run_taira_interrec_dataset.sh" yelp

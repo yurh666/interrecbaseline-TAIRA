@@ -1,0 +1,9 @@
+dimension,item,InterRec_setting,Baseline_setting,aligned: yes/no/partial/unknown,impact_on_fairness: low/medium/high,required_action
+Evaluation protocol,HitRate vs CRS SR,v3/TIRA主表多用Top-10 LLM或硬ID HR;需manifest,MCMIPL为多轮CRS成功比例SR@10(代码路径定义不同),partial,high,需要统一会话定义与candidate集合后才能并列主结论
+Evaluation protocol,NDCG/MRR,TIRA CSV提供NDCG/MRR(mean),MCMIPL训练日志未计算IR意义NDCG/MRR,not directly comparable,high,若要比需同一session级ranking评估器
+Interaction,avg_ask_count,TASK里定义用户澄清提问,MCMIPL为属性多选题对话;日志有AvgT与推荐轮次,partial,medium,需对齐“提问”是否等价MCQ轮次还是仅偏好澄清
+Candidates,catalog size & Top-K,InterRec常为Top-K生成/检索,KG+TransE+DRL policy on UI graph;candidate机制见原论文,no,high,需提供相同test users过滤与candidate集合说明
+Embedding,Encoder/BM25,TAIRA流水线含BM25+LLM,TransE(OpenKE预处理)+GNN+DRL,no,medium,声明为特征表示差异非公平缺陷但影响结论表述
+Training,offline RL,不适用或弱,端到端离线RL+MCTS式对话步,unknown,medium,需在论文脚注训练目标差异
+Efficiency,tokens/API,期望可有HTTP统计,本轮CPU RL无API;wall_time未系统化采集,partial,medium,需在实验脚本增加计时账本
+Splits,explicit train/valid/test,TAIRA manifests,MCMIPL按SCPR数据处理与UI_test截取,partial,medium,核验是否同一预处理版本与相同test用户集合

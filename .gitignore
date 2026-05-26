@@ -13,6 +13,10 @@ __pycache__/
 # Local env (optional; you may track conda env.yml instead)
 .venv/
 venv/
+.env.local
+
+# Incremental run checkpoints (large CSVs; do not commit)
+results/checkpoints/
 
 # Regenerable experiment logs (per-query); keep result-*.csv in logs dirs
 **/data/*/logs/**/*.log

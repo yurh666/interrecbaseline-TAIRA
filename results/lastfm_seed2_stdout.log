@@ -1,6 +1,6 @@
 Configuration: {'QUERY_NUMBER': 500, 'TOPN_ITEMS': 500, 'TOPK_ITEMS': 10, 'DOMAIN': 'lastfm', 'MODEL': 'deepseek-chat', 'METHOD': 'TAIRA', 'OPENAI_BASE_URL': 'https://api.deepseek.com/v1', 'BGE_M3_MODEL': 'BAAI/bge-m3', 'BGE_RERANKER_MODEL': 'BAAI/bge-reranker-base', 'ITEM_RETRIEVAL_RANKING_BACKEND': 'bm25', 'BM25_FALLBACK_TO_BGE': False, 'BM25_FALLBACK_MIN_SCORE': 0.0, 'ENABLE_LEARNING': False}
-Resuming from /home/yrh666/interrecbaseline-TAIRA/results/checkpoints/lastfm/seed_1/result-TAIRA.csv: 427 queries already done, skipping them.
-Results CSV: /home/yrh666/interrecbaseline-TAIRA/results/checkpoints/lastfm/seed_1/result-TAIRA.csv
+Resuming from /home/yrh666/interrecbaseline-TAIRA/results/checkpoints/lastfm/seed_2/result-TAIRA.csv: 427 queries already done, skipping them.
+Results CSV: /home/yrh666/interrecbaseline-TAIRA/results/checkpoints/lastfm/seed_2/result-TAIRA.csv
 Total queries to run: 73 / 500
   Skipping query 1 (id=208, already done)
   Skipping query 2 (id=2608, already done)
@@ -504,5 +504,5 @@ Total queries to run: 73 / 500
   Skipping query 500 (id=5076, already done)
 
 === Run complete. Completed this run: 0 new queries ===
-Results saved to /home/yrh666/interrecbaseline-TAIRA/results/checkpoints/lastfm/seed_1/result-TAIRA.csv
-Summary row: hit_rate=0.7227  mrr=0.9235  ndcg=0.8708  success_rate=0.9251
+Results saved to /home/yrh666/interrecbaseline-TAIRA/results/checkpoints/lastfm/seed_2/result-TAIRA.csv
+Summary row: hit_rate=0.7346  mrr=0.9219  ndcg=0.8761  success_rate=0.9227

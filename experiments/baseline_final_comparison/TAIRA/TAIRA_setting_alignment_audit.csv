@@ -1,0 +1,17 @@
+dimension,item,InterRec_setting,Baseline_setting,aligned: yes/no/partial/unknown,impact_on_fairness: low/medium/high,required_action
+Dataset / split,Which dataset bundle,not available in workspace (no v3 run_summary),Four domains: amazon_book lastfm movielens yelp (InterRec-aligned conversion per repo docs),unknown,high,Provide InterRec/v3 run directory with same domain list and session manifest
+Dataset / split,Train/valid/test split identity,unknown,Test-like slice via QUERY_NUMBER cap on converted CSV; train/valid paths not verified in read JSON,unknown,medium,Export identical session_id lists and split json for both sides
+Dataset / split,Same test users/sessions,unknown,lastfm/movielens n_queries<500 suggests dedup/resume; amazon ~500; yelp 492,unknown,high,Publish paired session_id ordering per seed
+Dataset / split,History ratio / future target construction,unknown,Documented InterRec CSV schema (future_test targets) in docs,partial,medium,Freeze preprocess script revision + checksum
+Seed protocol,Matching seeds,Baseline seeds 0-2 present,Seed 0-2 CSV+JSON aggregated,partial,medium,Ensure v3 uses same RNG for session shuffle if applied
+Candidate / catalog,same item catalog,unknown,BM25 over domain metadata+knowledge CSV (system_config ITEM_RETRIEVAL_RANKING_BACKEND=bm25),partial,medium,Confirm item id universe identical to InterRec encoder catalog
+Candidate / catalog,Exclude history items,unknown,TAIRA retrieves then ranks via agents; masking rules not audited in read files,unknown,medium,Code-level diff checklist
+Candidate / catalog,Full-catalog vs sampled top-K rerank,BM25 candidate generation then top10 output (details in TAIRA pipeline),Approx top-500 config TOPN_ITEMS=500 topK=10 yaml,partial,medium,Align candidate pool size with v3 evaluator
+Interaction protocol,max_turns,unknown typical 10-15 for CRS,v3 in prompt; TAIRA fixed single-shot turn budget (AvgT column fixed 1,no,high,Cannot compare multi-turn SR@K without definition bridge
+Interaction protocol,user simulator / choice model,unknown,No interactive user loop in TAIRA (batch evaluation),no,high,"Either restrict InterRec reporting to round-1 only, or add TAIRA multi-turn variant"
+Interaction protocol,stopping rule c_ask,unknown,N/A baseline has no c_ask,no,medium,Document as non-applicable asymmetry
+Model / embedding,Item embedding encoder,Belief embeddings in InterRec docs,Primarily lexical BM25 online; optional BGE yaml fields exist but bm25 enforced,partial,medium,State which encoder path both runs used
+Evaluation,Top-K,unknown,Top-10 throughout saved metrics,K=10 aligns if v3 evaluates @10,possible partial,low,Ensure same K in both
+Evaluation,final turn vs all-turns average,unknown,Single list evaluation per query,single turn only,partial,high,Multiplex InterRec metrics to first successful turn or full budget
+Evaluation,LLM judge vs ID hit,InterRec may use both,TAIRA reports both LLM HR/NDCG and direct ID metrics,partial,high,Pick one primary column for headline table
+Traceability,run_summary.jsonl / full_log,Expected in v3 template,Absent; dispersed logs only,no,medium,Normalize logging for reproducibility audits
